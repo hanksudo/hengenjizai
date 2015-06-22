@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+
+<title>WebSocket Test</title>
+
+<script src="jquery-1.9.1.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+  var wsUri = "ws://localhost:1337/";
+  var output;
+
+  function init()
+  {
+    output = document.getElementById("output");
+    testWebSocket();
+  }
+
+  function testWebSocket()
+  {
+    websocket = new WebSocket(wsUri, 'echo-protocol');
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+  }
+
+  function onOpen(evt)
+  {
+    writeToScreen("WebSocket CONNECTED");
+  }
+
+  function onClose(evt)
+  {
+    writeToScreen("WebSocket DISCONNECTED");
+  }
+
+  function onMessage(evt)
+  {
+    try {
+      var json = JSON.parse(evt.data);
+    } catch (e) {
+      console.log('This doesn\'t look like a valid JSON: ', message.data);
+      return;
+    }
+
+    // if (json.type === 'color') { // first response from the server with user's color
+    //     myColor = json.data;
+    //     status.text(myName + ': ').css('color', myColor);
+    //     input.removeAttr('disabled').focus();
+    //     // from now user can start sending messages
+    // } else
+    if (json.type === 'history') { // entire message history
+        // insert every single message to the chat window
+        for (var i=0; i < json.data.length; i++) {
+            writeToScreen('<span style="color: blue;">' + json.data[i].text+'</span>');
+            // addMessage(json.data[i].author, json.data[i].text,
+                       // json.data[i].color, new Date(json.data[i].time));
+        }
+    } else if (json.type === 'message') { // it's a single message
+        // input.removeAttr('disabled'); // let the user write another message
+        // addMessage(json.data.author, json.data.text,
+                   // json.data.color, new Date(json.data.time));
+        writeToScreen('<span style="color: blue;">' + json.data.text+'</span>');
+        // writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
+    } else {
+        console.log('Hmm..., I\'ve never seen JSON like this: ', json);
+    }
+  }
+
+  function onError(evt)
+  {
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+  }
+
+  function doSend(message)
+  {
+    // writeToScreen("SENT: " + message);
+    websocket.send(message);
+  }
+
+  function writeToScreen(message)
+  {
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    $('#output').after(pre);
+  }
+
+  window.addEventListener("load", init, false);
+
+  $(function() {
+    $('#sendButton').on('click', function() {
+      doSend($('#messageBox').val());
+    });
+  });
+
+</script>
+
+<h2>WebSocket Send Message</h2>
+
+<input type="text" name="message" value="Test Message from Moko365." id="messageBox" size="30">
+<input type="button" value="Send" id="sendButton">
+<div id="output"></div>
+
+</html>
