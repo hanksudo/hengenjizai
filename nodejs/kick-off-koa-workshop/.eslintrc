@@ -1,0 +1,19 @@
+# ESLint config file
+# Rules: http://eslint.org/docs/rules/
+# User Guide: http://eslint.org/docs/user-guide/configuring
+
+env:
+  node: true
+  es6: true
+
+rules:
+  quotes: 0
+  strict: 0
+  semi: [2, always]
+  no-unused-vars: 0
+  no-use-before-define: 0
+  no-return-assign: 0
+  new-parens: 0
+  camelcase: 2
+  no-underscore-dangle: 0
+  no-constant-condition: 0
