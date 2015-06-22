@@ -1,0 +1,28 @@
+
+<button onclick="myFunction()">Try it</button>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+    $(document).on('click','.ans-option',function(){
+        console.log('ans');
+    });
+    // setTimeout(bindAns2(), 10000);
+    setTimeout(bindAns2,3000);
+});
+
+
+function myFunction()
+{
+    setTimeout(function(){alert("Hello")},3000);
+}
+
+
+function bindAns2() {
+    alert(123);
+    $(document).off('click','.ans-option');
+    $(document).on('click','.ans-option',function(){
+        console.log('ans2');
+    });
+}
+
+</script>
