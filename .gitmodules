@@ -4,3 +4,9 @@
 [submodule "nodejs/flicker_downloader"]
 	path = nodejs/flicker_downloader
 	url = git@github.com:hanksudo/flicker_downloader.git
+[submodule "python/letterpress-solver"]
+	path = python/letterpress-solver
+	url = git@github.com:hanksudo/letterpress-solver.git
+[submodule "nodejs/node-github-hook-deploy"]
+	path = nodejs/node-github-hook-deploy
+	url = git@github.com:hanksudo/node-github-hook-deploy.git
