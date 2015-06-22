@@ -1,0 +1,3 @@
+[submodule "python/webpy-fileupload-thumbnail-demo"]
+	path = python/webpy-fileupload-thumbnail-demo
+	url = git@github.com:hanksudo/webpy-fileupload-thumbnail-demo.git
