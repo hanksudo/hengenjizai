@@ -1,0 +1,53 @@
+extends ../layouts/default
+
+block head
+  title= projectName
+
+block body
+    div.hero-unit
+        h1 #{projectName}
+            span.label.label-important #{__('A l p h a')}
+        p.lead
+            | #{__('Price of Gold Buying')}
+            span.badge.badge-warning TWD #{goldBuy}
+            &nbsp;
+            | #{__('Price of Gold Selling')}
+            span.badge.badge-warning TWD #{goldSell}
+        div.row
+        div
+            blockquote.pull-left
+                i.icon-calendar
+                    |  #{__('At 9am every morning(or customize time), tell you price of gold.')}
+                small #{__('Daily Report')}
+            blockquote.pull-right
+                i.icon-bell-alt
+                    |  #{__('Realtime notify - when the price closest what you set, notify instantly.')}
+                small #{__("Don't need to pay attention the price.")}
+        div.clearfix
+        div
+            a.btn.btn-large.btn-success(href='/signup/')
+                i.icon-user
+                |  #{__('Sign up')}
+            &nbsp;
+            if oauthFacebook
+                a.btn.btn-large.btn-facebook(href='/signup/facebook/')
+                    i.icon-facebook-sign.icon-large
+                    |  #{__('Login with Facebook')}
+
+
+  //- div.row
+  //-   div.span4
+  //-     h3 每日匯報
+  //-     p
+  //-       | 每天早上九點(或你自己設置的時間)，寄送你想知道的貨幣價格或金價給你。
+  //-     a.btn(href='/about/') Learn More
+  //-   div.span4
+  //-     h3 到價通知
+  //-     p
+  //-       | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+  //-     a.btn(href='/signup/') Learn More
+  //-   div.span4
+  //-     h3 Contact Us
+  //-     p
+  //-       | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+  //-     a.btn(href='/contact/') Learn More

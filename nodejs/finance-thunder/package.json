@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "~3.0.0",
+    "jade": "~0.27.7",
+    "connect-mongo": "~0.2.0",
+    "async": "~0.1.22",
+    "mongoose": "~3.6.7",
+    "emailjs": "~0.3.4",
+    "passport": "~0.1.16",
+    "passport-local": "~0.1.6",
+    "passport-oauth": "~0.1.15",
+    "passport-twitter": "~0.1.5",
+    "passport-facebook": "~0.1.5",
+    "passport-github": "~0.1.4",
+    "cheerio": "~0.12.0",
+    "request": "~2.21.0",
+    "i18n": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-exec": "~0.4.1"
+  }
+}
