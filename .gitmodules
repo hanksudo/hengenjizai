@@ -1,3 +1,6 @@
 [submodule "python/webpy-fileupload-thumbnail-demo"]
 	path = python/webpy-fileupload-thumbnail-demo
 	url = git@github.com:hanksudo/webpy-fileupload-thumbnail-demo.git
+[submodule "nodejs/flicker_downloader"]
+	path = nodejs/flicker_downloader
+	url = git@github.com:hanksudo/flicker_downloader.git
