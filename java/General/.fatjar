@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Dec 12 13:57:44 CST 2008
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Maze.jar
+manifest.mergeall=true
+manifest.mainclass=maze.Maze
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|General>~Access/;<po|General>~collectionSample/;<po|General>~images/;<po|General>~sampleAbstract/;<po|General>~sampleClass/;<po|General>~sampleExtends/;<po|General>~sampleInterface/;<po|General>~sampleProtected/;<po|General>~.classpath;<po|General>~.fatjar;<po|General>~.project;<po|General>~ArrayListDemo.class;<po|General>~Base.class;<po|General>~CreateRandomNumbers.class;<po|General>~DataTypeRange.class;<po|General>~dbtest.class;<po|General>~demo.class;<po|General>~dowhileMultiplication.class;<po|General>~ExceptionFinallyTest.class;<po|General>~Factorial.class;<po|General>~Factorial_Recursive.class;<po|General>~Fibonacci.class;<po|General>~Fibonacci_Recursive.class;<po|General>~FileChooserDemo$1.class;<po|General>~FileChooserDemo.class;<po|General>~ForInDemo.class;<po|General>~GetInput_BufferReader.class;<po|General>~GetInput_Scanner.class;<po|General>~getMax.class;<po|General>~GetUrlData.class;<po|General>~Mean_SD.class;<po|General>~ObjectCastTest.class;<po|General>~ObserverAndObservableDemo$MyModel.class;<po|General>~ObserverAndObservableDemo$MyView.class;<po|General>~ObserverAndObservableDemo.class;<po|General>~Odd_Even.class;<po|General>~processWOW.class;<po|General>~Regex.class;<po|General>~RomanAndNumeralConveter.class;<po|General>~shift.class;<po|General>~Solve1.class;<po|General>~stringTokenizer.class;<po|General>~Sub.class;<po|General>~Sub2.class;<po|General>~test.class;<po|General>~test2.class;<po|General>~test3.class;<po|General>~Turtle_Rabbit_Race.class;<po|General>~TuxThreadTest.class;<po|General>~txtReadWrite.class
+includes=

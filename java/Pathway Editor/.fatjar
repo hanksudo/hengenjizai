@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun Nov 09 18:57:38 CST 2008
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Pathway Editor_fat.jar
+manifest.mergeall=true
+manifest.mainclass=mainFrame
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

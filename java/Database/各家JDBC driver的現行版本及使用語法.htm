@@ -1,0 +1,187 @@
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>各家JDBC driver的現行版本及使用語法</title>
+<style>
+<!--
+  .odd      { background-color: #e3e3e3 }
+  P         { font-family: Tahoma,Georgia; color: #000000; font-size: 12px } 
+  A         { text-decoration: underline }
+  .ilink         { text-decoration: underline; color:#0000FF }
+  A:link    { color: #000000; text-decoration: underline }
+  :link.ilink    { text-decoration: underline; color:#0000FF }
+  .codeStyle {	padding-right: 0.5em; margin-top: 1em; padding-left: 0.5em;  font-size: 9pt; margin-bottom: 1em; padding-bottom: 0.5em; margin-left: 0pt; padding-top: 0.5em; font-family: Courier New; background-color: #000000; color:#ffffff ; }
+-->
+</style>
+</head>
+
+<body>
+
+<center>
+<table cellSpacing="1" cellPadding="4" width="95%" border="0">
+  <tr class="odd">
+    <td vAlign="top" width="100%" style="font-family: Tahoma,Georgia; color: #000000; font-size: 12px; table-layout: fixed; word-break: break-all">
+    <span class="javascript" id="text366"><font color="red" size="3">Microsoft 
+    SQL Server series (6.5, 7.x and 2000) and Sybase 10</font><font size="3"><br>
+    <br>
+    JDBC Name: jTDS<br>
+    URL: <a class="ilink" href="http://jtds.sourceforge.net/" target="_blank">
+    http://jtds.sourceforge.net/</a><br>
+    Version: 0.5.1<br>
+    Download URL:
+    <a class="ilink" href="http://sourceforge.net/project/showfiles.php?group_id=33291" target="_blank">
+    http://sourceforge.net/project/showfiles.php?group_id=33291</a><br>
+    <br>
+    語法:<br>
+    <br>
+　</font><pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">Class.forName(&quot;net.sourceforge.jtds.jdbc.Driver</font><font size="3">&quot;);
+Connection con = DriverManager.getConnection(&quot;jdbc:jtds:sqlserver://host:port/database&quot;,&quot;user&quot;,&quot;password&quot;);
+or
+Connection con = DriverManager.getConnection(&quot;jdbc:jtds:sybase://host:port/database&quot;,&quot;user&quot;,&quot;password&quot;);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">MySQL</font><br>
+    <br>
+    JDBC Name: Connector/J 3.0<br>
+    URL: <a class="ilink" href="http://www.mysql.com/" target="_blank">
+    http://www.mysql.com/</a><br>
+    Version: 3.0.8-stable<br>
+    Download URL:
+    <a class="ilink" href="http://www.mysql.com/downloads/api-jdbc-stable.html" target="_blank">
+    http://www.mysql.com/downloads/api-jdbc-stable.html</a><br>
+    <br>
+    語法:<br>
+    <br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">Class.forName(&quot;com.mysql.jdbc.Driver</font><font size="3">&quot;);
+Connection con = DriverManager.getConnection(&quot;jdbc:mysql://host:port/database&quot;,&quot;user&quot;,&quot;password&quot;);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">Oracle</font><br>
+    <br>
+    JDBC Name: Connector/J 3.0<br>
+    URL: <a class="ilink" href="http://otn.oracle.com/" target="_blank">
+    http://otn.oracle.com/</a><br>
+    Version: 3.0.8-stable<br>
+    Download URL:
+    <a class="ilink" href="http://otn.oracle.com/software/tech/java/sqlj_jdbc/content.html" target="_blank">
+    http://otn.oracle.com/software/tech/java/sqlj_jdbc/content.html</a><br>
+    <br>
+    語法:<br>
+    <br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">Class.forName(&quot;oracle.jdbc.driver.OracleDriver</font><font size="3">&quot;);
+Connection con = DriverManager.getConnection(&quot;jdbc:oracle:thin:@host:port:databse&quot;,&quot;user&quot;,&quot;password&quot;);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">Sybase</font><br>
+    <br>
+    Driver:
+    <a class="ilink" href="http://www.sybase.com/detail_list_multi/1,6902,11662,00.html?dynamic_query_yn=N&dropdown_product=1265" target="_blank">
+    jConnect 4.5/5.5</a> (JDBC 2.0 請使用5.5) <br>
+    <br>
+    語法:<br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">
+Class.forName(&quot;com.sybase.jdbc2.jdbc.SybDriver&quot;).newInstance();
+
+Connection con = DriverManager.getConnection(
+&quot;jdbc:sybase:Tds:[IP位址或機器名稱]:2638?ServiceName=資料庫名稱&quot;,
+&quot;帳號&quot;,&quot;密碼&quot;);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">Postgresql</font><br>
+    <br>
+    JDBC Name: PostgreSQL JDBC<br>
+    URL: <a class="ilink" href="http://jdbc.postgresql.org/" target="_blank">
+    http://jdbc.postgresql.org/</a><br>
+    Version: 7.3.3 build 110<br>
+    Download URL:
+    <a class="ilink" href="http://jdbc.postgresql.org/download.html" target="_blank">
+    http://jdbc.postgresql.org/download.html</a><br>
+    <br>
+    語法:<br>
+    <br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">Class.forName(&quot;org.postgresql.Driver</font><font size="3">&quot;); 
+Connection con=DriverManager.getConnection(&quot;jdbc:postgresql://host:port/database&quot;,&quot;user&quot;,&quot;password&quot;);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">Informix</font><br>
+    <br>
+    Driver：com.informix.jdbc.IfxDriver<br>
+    <br>
+    語法：<br>
+    <br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">Class.forName(&quot;com.informix.jdbc.IfxDriver</font><font size="3">&quot;);
+
+String full_db=&quot;jdbc:informix-sqli://10.14.86.11:300/authority: 
+INFORMIXSERVER=ifx9;user=informix;password=informix;
+NEWLOCALE=en_us,zh_tw;NEWCODESET=Big5,8859-1,819;&quot;;
+
+con =DriverManager.getConnection(full_db);</font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    <br>
+    <font color="red">IBM AS400主機在用的JDBC語法</font><br>
+    <br>
+    有裝V4R4以上版本的Client Access Express<br>
+    可以在C:\Program Files\IBM\Client Access\jt400\lib<br>
+    找到 driver 檔案 jt400.zip，並更改副檔名成為 jt400.jar<br>
+    <br>
+    語法<br>
+　</font></p>
+    <pre>　</pre>
+    <div class="codeStyle">
+      <pre><font size="3">java.sql.DriverManager.registerDriver</font><font size="3"> (new com.ibm.as400.access.AS400JDBCDriver ());
+Class.forName(&quot;com.ibm.as400.access.AS400JDBCConnection&quot;);
+con = DriverManager.getConnection(&quot;jdbc:as400://IP&quot;,&quot;user&quot;,&quot;password&quot;); </font></pre>
+    </div>
+    <pre>　</pre>
+    <p><font size="3"><br>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+    其他資訊:<br>
+    <br>
+    <font color="green">* 尋找查詢JDBC Driver的地方: </font>
+    <a class="ilink" href="http://servlet.java.sun.com/products/jdbc/drivers" target="_blank">
+    http://servlet.java.sun.com/products/jdbc/drivers</a><br>
+    <br>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+    通常driver都已包成jar檔<br>
+    將jar設定在CLASSPATH中,或者如果是寫JSP,Servel可以將這些jar放到<br>
+    使用的container中的lib資料夾底下<br>
+    詳細內容就請大家自行去各家網站看看介紹<br>
+    有很多文件可以看</font></span></td>
+  </tr>
+</table>
+</center>
+
+</body>
+
+</html>
