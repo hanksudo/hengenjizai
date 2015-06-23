@@ -10,3 +10,9 @@
 [submodule "nodejs/node-github-hook-deploy"]
 	path = nodejs/node-github-hook-deploy
 	url = git@github.com:hanksudo/node-github-hook-deploy.git
+[submodule "iOS/Matchismo"]
+	path = iOS/Matchismo
+	url = git@github.com:hanksudo/Matchismo.git
+[submodule "iOS/Attributor"]
+	path = iOS/Attributor
+	url = git@github.com:hanksudo/Attributor.git
