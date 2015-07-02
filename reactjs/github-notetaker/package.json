@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.5.4",
     "re-base": "0.0.11",
     "react": "^0.13.3"
   },
