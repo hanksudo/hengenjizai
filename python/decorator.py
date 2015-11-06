@@ -1,7 +1,7 @@
 
 def extractData(handler):
     def extracted(request, *args, **kwargs):
-        print "extractData args=", args
+        # print "extractData args=", args
         return handler(request, 'this is data', *args, **kwargs)
 
     return extracted
@@ -9,14 +9,14 @@ def extractData(handler):
 
 def doAuth(handler):
     def authed(request, *args, **kwargs):
-        print "doAuth args=", args
+        # print "doAuth args=", args
         return handler(request, "authenticated", *args, **kwargs)
     return authed
 
 
 def audit(handler):
     def audited(request, *args, **kwargs):
-        print "audit args=", args
+        # print "audit args=", args
         return handler(request, *args, **kwargs)
     return audited
 
