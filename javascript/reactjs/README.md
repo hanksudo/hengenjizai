@@ -4,13 +4,13 @@
 
 ```bash
 npm install --global babel-cli
-npm install babel-preset-react
+npm install --save react react-dom babel-preset-react
 ```
 
 ## Command note
 
 ```bash
-babel --presets react src --watch --out-dir build
+babel --presets react src --watch --out-dir dist
 webpack -w
 ```
 
