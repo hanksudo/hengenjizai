@@ -1,6 +1,16 @@
 # ReactJS
 
+## Babel
+
 ```bash
+npm install --global babel-cli
+npm install babel-preset-react
+```
+
+## Command note
+
+```bash
+babel --presets react src --watch --out-dir build
 webpack -w
 ```
 
