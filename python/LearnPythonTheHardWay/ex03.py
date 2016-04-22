@@ -8,7 +8,7 @@ Exercise 3 : Numbers and Math
 @version 20140314
 """
 
-print "I will no count my chickens:"
+print "I will now count my chickens:"
 
 print "Hens", 25 + 30 / 6  # 母雞
 print "Roosters", 100 - 25 * 3 % 4  # 公雞

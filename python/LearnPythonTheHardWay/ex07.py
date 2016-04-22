@@ -11,7 +11,7 @@ Exercise 7 : More Printing
 print "Mary had a little lamb."
 print "It's fleece was white as %s." % 'snow'
 print "And everywhere that Mary went."
-print "." * 10 # print . ten times
+print "." * 10  # print . ten times
 
 end1 = "C"
 end2 = "h"
