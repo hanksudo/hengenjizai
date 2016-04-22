@@ -9,5 +9,5 @@ Exercise 1 : A Good First Program
 """
 
 print "Hello, I am Hank."
-print "おげんりですか"
+print "おげんきですか"
 print "中文字也是沒問題"
