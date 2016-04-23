@@ -1,7 +1,7 @@
 LearnPythonTheHardWay
 =====================
 
-Record my exercises files.
+All about exercises files.
 
 Learn Python The Hard Way
 http://learnpythonthehardway.org/book/
@@ -9,7 +9,7 @@ http://learnpythonthehardway.org/book/
 ## Note
 
 ```zsh
-python ex13.py a b c
+python ex13.py one two three
 python ex14.py Hank
 python ex15.py data.txt
 python ex16.py new.txt
