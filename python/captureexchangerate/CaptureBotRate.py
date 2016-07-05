@@ -45,5 +45,4 @@ def isNormalDay():
 
 
 if __name__ == "__main__":
-    # 即期買入
     print highlight_json(getCurrencyRate())
