@@ -3,9 +3,9 @@
 #
 # 取得台銀貨幣價格
 
+import json
 import urllib2
 from BeautifulSoup import BeautifulSoup
-from utils import highlight_json
 from datetime import datetime
 import time
 import re
@@ -45,4 +45,4 @@ def isNormalDay():
 
 
 if __name__ == "__main__":
-    print highlight_json(getCurrencyRate())
+    print json.dumps(getCurrencyRate()

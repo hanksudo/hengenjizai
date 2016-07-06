@@ -9,7 +9,7 @@ import time
 import urllib2
 
 from BeautifulSoup import BeautifulSoup
-from utils import highlight_json
+import json
 
 
 def getGoldPrice():
@@ -29,4 +29,4 @@ def getGoldPrice():
 
 
 if __name__ == "__main__":
-    print highlight_json(getGoldPrice())
+    print json.dumps(getGoldPrice())
