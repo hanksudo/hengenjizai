@@ -45,4 +45,4 @@ def isNormalDay():
 
 
 if __name__ == "__main__":
-    print json.dumps(getCurrencyRate()
+    print json.dumps(getCurrencyRate())
