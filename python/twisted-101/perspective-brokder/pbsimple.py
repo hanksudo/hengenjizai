@@ -7,6 +7,10 @@ class Echoer(pb.Root):
         print "echoing", st
         return st
 
+    def remote_test(self, st):
+        print "testing", st
+        return st
+
 if __name__ == '__main__':
     reactor.listenTCP(8789, pb.PBServerFactory(Echoer()))
     reactor.run()
