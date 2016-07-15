@@ -10,7 +10,7 @@ from datetime import datetime
 import time
 import re
 
-currencyList = ["JPY", "GBP", "ZAR", "AUD", "NZD", "CAD", "SEK", "USD"]
+currencyList = ["JPY", "GBP", "ZAR", "AUD", "NZD", "CAD", "SEK", "USD", "CNY"]
 
 
 def getCurrencyRate():
