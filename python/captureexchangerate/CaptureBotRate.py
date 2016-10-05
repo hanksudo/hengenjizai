@@ -2,23 +2,20 @@
 # -*- coding: utf-8 -*-
 #
 # 取得台銀貨幣價格
+#
+# Last Updated: 2016/10/05
 
 import json
 import urllib2
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 from datetime import datetime
 import time
-import re
 
-currencyList = ["JPY", "GBP", "ZAR", "AUD", "NZD", "CAD", "SEK", "USD", "CNY"]
+currencies_list = ["JPY", "GBP", "ZAR", "AUD", "NZD", "CAD", "SEK", "USD", "CNY"]
 
 
 def getCurrencyRate():
     if isNormalDay():
-        url = "http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm"
-        data = urllib2.urlopen(url).read()
-        soup = BeautifulSoup(data)
-
         response = {
             "date": time.strftime("%Y-%m-%d", time.localtime()),
             "buy_cash": {},
@@ -26,14 +23,18 @@ def getCurrencyRate():
             "buy_spot": {},
             "sell_spot": {}
         }
-        for i in soup.findAll("td", {"class": "titleLeft"}):
-            title = i.find("img").next.encode("utf-8")
-            currency = re.search("\(([\w]+)\)", title).group(1)
-            if currency in currencyList:
-                response["buy_cash"][currency.lower()] = i.parent.findAll("td")[1].renderContents()
-                response["sell_cash"][currency.lower()] = i.parent.findAll("td")[2].renderContents()
-                response["buy_spot"][currency.lower()] = i.parent.findAll("td")[3].renderContents()
-                response["sell_spot"][currency.lower()] = i.parent.findAll("td")[4].renderContents()
+
+        url = "http://rate.bot.com.tw/xrt"
+        data = urllib2.urlopen(url).read()
+        soup = BeautifulSoup(data, "html.parser")
+        for ele in soup.select('a[href*="/xrt/history/"]'):
+            currency = ele["href"][-3:]
+            if currency in currencies_list:
+                results = ele.parent.find_next_siblings("td")
+                response["buy_cash"][currency.lower()] = results[0].encode_contents()
+                response["sell_cash"][currency.lower()] = results[1].encode_contents()
+                response["buy_spot"][currency.lower()] = results[2].encode_contents()
+                response["sell_spot"][currency.lower()] = results[3].encode_contents()
 
         return response
     else:
