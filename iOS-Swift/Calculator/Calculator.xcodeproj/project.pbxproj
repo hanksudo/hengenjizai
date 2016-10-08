@@ -54,14 +54,22 @@
 		8F9D78B11DA920E100E13185 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8F9D78B21DA920E100E13185 /* AppDelegate.swift */,
 				8F9D78B41DA920E100E13185 /* ViewController.swift */,
 				8F9D78B61DA920E100E13185 /* Main.storyboard */,
+				8F9D78C41DA9242900E13185 /* Supporting Files */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		8F9D78C41DA9242900E13185 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F9D78B21DA920E100E13185 /* AppDelegate.swift */,
 				8F9D78B91DA920E100E13185 /* Assets.xcassets */,
 				8F9D78BB1DA920E100E13185 /* LaunchScreen.storyboard */,
 				8F9D78BE1DA920E100E13185 /* Info.plist */,
 			);
-			path = Calculator;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					8F9D78AE1DA920E100E13185 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZYKB4BL849;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,9 +269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZYKB4BL849;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanksudo.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanksudo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +282,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZYKB4BL849;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanksudo.Calculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanksudo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
