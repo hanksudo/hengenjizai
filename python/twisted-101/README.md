@@ -7,5 +7,9 @@ Twisted is an event-driven networking engine written in Python and licensed unde
 ## Installation
 
 ```bash
+mkvirtualenv twisted-101 -p python2
 pip install Twisted
+
+# Serving Static Content From a directory
+twistd -n web --path ./
 ```

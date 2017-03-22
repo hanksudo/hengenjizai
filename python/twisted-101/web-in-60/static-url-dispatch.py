@@ -4,7 +4,8 @@ from twisted.internet import reactor
 from twisted.web.static import File
 
 root = Resource()
-root.putChild("foo", File("./tmp"))
+root.putChild("foo", File("/tmp"))
+root.putChild("baz", File("/opt"))
 
 factory = Site(root)
 reactor.listenTCP(8880, factory)

@@ -1,7 +1,7 @@
 from twisted.web.server import Site
 from twisted.web.resource import Resource
 from twisted.internet import reactor
-
+from calendar import calendar
 
 class YearPage(Resource):
     def __init__(self, year):
@@ -9,14 +9,14 @@ class YearPage(Resource):
         self.year = year
 
     def render_GET(self, request):
-        return "%d" % self.year
+        return "<pre>%s</pre>" % (calendar(self.year),)
 
 
-class Root(Resource):
+class Calendar(Resource):
     def getChild(self, name, request):
         return YearPage(int(name))
 
-root = Root()
+root = Calendar()
 factory = Site(root)
 reactor.listenTCP(8880, factory)
 reactor.run()
