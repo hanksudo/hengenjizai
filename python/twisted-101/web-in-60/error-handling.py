@@ -3,6 +3,7 @@ from twisted.web.resource import Resource, NoResource
 from twisted.internet import reactor
 from calendar import calendar
 
+
 class YearPage(Resource):
     def __init__(self, year):
         Resource.__init__(self)

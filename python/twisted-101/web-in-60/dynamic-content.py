@@ -3,8 +3,10 @@ from twisted.web.server import Site
 from twisted.web.resource import Resource
 import time
 
+
 class ClockPage(Resource):
     isLeaf = True
+
     def render_GET(self, request):
         return "%s" % (time.ctime(),)
 
