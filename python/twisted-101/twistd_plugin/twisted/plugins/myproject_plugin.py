@@ -6,12 +6,7 @@ from twisted.web import server, resource
 from twisted.application.service import IServiceMaker
 from twisted.application import internet
 
-
-class Simple(resource.Resource):
-    isLeaf = True
-
-    def render_GET(self, request):
-        return "<html>Hello, world!</html>"
+from myproject import MyFactory
 
 
 class Options(usage.Options):
@@ -28,6 +23,6 @@ class MyServiceMaker(object):
         """
         Construct a TCPServer from a factory defined in myproject.
         """
-        return internet.TCPServer(int(options["port"]), server.Site(Simple()))
+        return internet.TCPServer(int(options["port"]), MyFactory)
 
 serviceMaker = MyServiceMaker()
