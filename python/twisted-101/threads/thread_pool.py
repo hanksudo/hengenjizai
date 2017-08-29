@@ -10,8 +10,14 @@ task_list = []
 def f():
     time.sleep(0.5)
 
+
+def on_the_road(_, num):
+    print "num", num
+
+
 for i in range(100):
     d = threads.deferToThreadPool(reactor, pool, f)
+    d.addCallback(on_the_road, i)
     task_list.append(d)
 
 
