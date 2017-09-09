@@ -1,6 +1,6 @@
 # Twisted 101
 
-Twisted is an event-driven networking engine written in Python and licensed under the open source 
+Twisted is an event-driven networking engine
 
 - [Twisted](https://twistedmatrix.com/trac/)
 
@@ -12,4 +12,11 @@ pip install Twisted
 
 # Serving Static Content From a directory
 twistd -n web --path ./
+```
+
+## echo server
+
+```bash
+python echo_server.py
+telnet 127.0.0.1 1234
 ```
