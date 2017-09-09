@@ -18,4 +18,15 @@ twistd -n web --path rpy/
 curl http://localhost:8080/test.rpy
 ```
 
-- [session](http://twistedmatrix.com/documents/current/web/howto/using-twistedweb.html#session)
+## Session
+
+[session](http://twistedmatrix.com/documents/current/web/howto/using-twistedweb.html#session)
+
+```bash
+python session.py
+```
+
+use browser to open
+
+- [http://localhost:8080](http://localhost:8080)
+- [http://localhost:8080/expire](http://localhost:8080/expire)
