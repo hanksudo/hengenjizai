@@ -1,3 +1,4 @@
+# Demonstrate use tap to create plugin.
 from twisted.application.service import ServiceMaker
 
 MyProject2 = ServiceMaker(

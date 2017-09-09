@@ -11,8 +11,8 @@ class Options(usage.Options):
     synopsis = "[options]"
     longdesc = "My service."
     optParameters = [
-        ["port", "p", 1235, "The port number to listen on."]
-    ]
+        ["port", "p", 1234, "The port number to listen on."]
+        ["host", "h", "localhost", "Server hostname"]]
 
 
 def makeService(config):
