@@ -5,23 +5,18 @@ from twisted.internet import reactor
 
 class ShowSession(Resource):
     def getChild(self, name, request):
-        print name
-        if name == '':
+        if name == "":
             return self
         return Resource.getChild(self, name, request)
 
     def render_GET(self, request):
-        return 'Your session id is: ' + request.getSession().uid
+        return "Your session id is: " + request.getSession().uid
 
 
 class ExpireSession(Resource):
     def render_GET(self, request):
         request.getSession().expire()
-        return 'Your session has been expired.'
-
-
-# class CounterSession(Resource):
-    # def render_GET(self, )
+        return "Your session has been expired."
 
 
 resource = ShowSession()
