@@ -1,7 +1,9 @@
-#!/usr/bin/env/ python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # 取得台銀台幣黃金銀行買入賣出價
+#
+# Last Updated: 2017/09/26
 
 from __future__ import print_function
 import json
