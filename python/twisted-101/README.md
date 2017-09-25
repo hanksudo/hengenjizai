@@ -8,7 +8,7 @@ Twisted is an event-driven networking engine
 
 ```bash
 mkvirtualenv twisted-101 -p python2
-pip install Twisted
+pip install twisted
 
 # Serving Static Content From a directory
 twistd -n web --path ./
