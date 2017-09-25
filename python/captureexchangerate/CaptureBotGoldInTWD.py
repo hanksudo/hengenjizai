@@ -3,30 +3,32 @@
 #
 # 取得台銀台幣黃金銀行買入賣出價
 
-
-import re
-import time
-import urllib2
-
-from BeautifulSoup import BeautifulSoup
+from __future__ import print_function
 import json
+import time
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib2 import urlopen
+
+from bs4 import BeautifulSoup
 
 
 def getGoldPrice():
-    url = "http://rate.bot.com.tw/Pages/Static/UIP005.zh-TW.htm"
-    data = urllib2.urlopen(url).read()
-    soup = BeautifulSoup(data)
+    url = "http://rate.bot.com.tw/gold"
+    data = urlopen(url).read()
+    soup = BeautifulSoup(data, "html.parser")
 
     response = {
         "date": time.strftime("%Y-%m-%d", time.localtime())
     }
 
-    prices = soup.findAll("td", {"class": "decimal"}, text=re.compile("^\d+$"))
-    response["sell"] = prices[0]
-    response["buy"] = prices[1]
+    prices = soup.find_all("td", {"class": "rowSP_Ctrl_0_2_2"})
+    response["sell"] = prices[0].find_next_sibling().text
+    response["buy"] = prices[1].find_next_sibling().text
 
     return response
 
 
 if __name__ == "__main__":
-    print json.dumps(getGoldPrice())
+    print(json.dumps(getGoldPrice()))
