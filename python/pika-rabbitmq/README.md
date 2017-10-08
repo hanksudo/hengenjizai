@@ -1,17 +1,42 @@
-# pika test with RabbitMQ
+# RabbitMQ with pika
 
-- [pika](https://pika.readthedocs.org/en/0.9.14/)
+- [pika](https://pika.readthedocs.io/en/0.11.0/)
 - [RabbitMQ](http://www.rabbitmq.com/)
 - [RabbitMQ Note](https://gist.github.com/hanksudo/09b9a854d91e072b8d2d)
 
-## Hello World
-## Work Queues
-## Publish / Subscribe
-## Routing
+## Tutorials
+
+### Hello World
+
+![](https://www.rabbitmq.com/img/tutorials/python-one-overall.png)
+
+### Work Queues
+
+![](https://www.rabbitmq.com/img/tutorials/python-two.png)
+
+- Create two workers
+
+```bash
+python worker.py
+python worker.py
+```
+
+- Add multi tasks with different dots
+
+```bash
+python new_task.py .....................
+python new_task.py ...
+python new_task.py ...
+python new_task.py ...
+```
+
+### Publish / Subscribe
+
+### Routing
 
 - emit_log
 
-``` bash
+```bash
 python emit_log_direct.py
 python emit_log_direct.py "yo"
 python emit_log_direct.py info "information for you"
@@ -21,7 +46,7 @@ python emit_log_direct.py warning "get some warning"
 
 - receive_log
 
-``` bash
+```bash
 python receive_logs_direct.py info
 python receive_logs_direct.py info error warning
 ```
