@@ -32,6 +32,8 @@ python new_task.py ...
 
 ### Publish / Subscribe
 
+![](https://www.rabbitmq.com/img/tutorials/python-three-overall.png)
+
 ### Routing
 
 - emit_log
