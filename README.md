@@ -1,2 +1,3 @@
 # hengenjizai
-My old projects, learning and experiment code collections. No reusable code here.
+
+demonstrate, side projects, learning and experiment code collections.
