@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This is a file to demonstrate shell script.
+
 # print
 WORD1=Car
 WORD2=Fish
@@ -8,6 +10,7 @@ echo "This word $WORD1 contains ${#WORD1} characters."
 echo "This word $WORD2 contains ${#WORD2} characters."
 echo "I am here."; echo "you are there."
 echo $(( 2#111 ))
+echo $(( 16#FF ))
 
 # lower and upper case (> Bash 4.0)
 WORD3="WHATsup"
