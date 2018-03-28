@@ -1,7 +1,7 @@
 # RabbitMQ with pika
 
-- [pika](https://pika.readthedocs.io/en/0.11.0/)
 - [RabbitMQ](http://www.rabbitmq.com/)
+- [pika](https://pika.readthedocs.io/en/0.11.0/)
 - [RabbitMQ Note](https://gist.github.com/hanksudo/09b9a854d91e072b8d2d)
 
 ## Tutorials
@@ -35,6 +35,8 @@ python new_task.py ...
 ![](https://www.rabbitmq.com/img/tutorials/python-three-overall.png)
 
 ### Routing
+
+![](https://www.rabbitmq.com/img/tutorials/python-four.png)
 
 - emit_log
 
