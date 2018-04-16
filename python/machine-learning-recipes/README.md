@@ -4,7 +4,11 @@
 
 ## Notes
 
-Collect Training data -> Train Classifier -> Make Predictions
+- Collect Training data -> Train Classifier -> Make Predictions
+- Ideal features are:
+  - Informative
+  - Independent
+  - Simple
 
 ## Links
 
