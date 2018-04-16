@@ -12,4 +12,5 @@
 
 ## Links
 
+- [A Neural Network Playground](http://playground.tensorflow.org/)
 - [scikit-learn: machine learning in Python — scikit-learn 0.16.1 documentation](http://scikit-learn.org/)

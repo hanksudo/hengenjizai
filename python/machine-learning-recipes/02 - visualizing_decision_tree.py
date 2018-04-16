@@ -6,7 +6,7 @@ from sklearn import tree
 from sklearn.externals.six import StringIO
 import pydot
 
-# 1. Import dataset 
+# 1. Import dataset
 iris = load_iris()
 # print(iris.feature_names)
 # print(iris.target_names)
