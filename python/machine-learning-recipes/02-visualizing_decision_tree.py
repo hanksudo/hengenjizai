@@ -1,3 +1,5 @@
+# 02 - Visualing a Decision Tree - https://youtu.be/tNa99PG8hR8
+# scikit-learn datasets: http://scikit-learn.org/stable/datasets/
 # https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 import numpy as np
