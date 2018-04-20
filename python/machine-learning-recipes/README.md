@@ -24,3 +24,4 @@ docker run -it -p 8888:8888 tensorflow/tensorflow
 - https://github.com/random-forests/tutorials/blob/master/ep7.ipynb
 - [A Neural Network Playground](http://playground.tensorflow.org/)
 - [scikit-learn: machine learning in Python — scikit-learn 0.16.1 documentation](http://scikit-learn.org/)
+- [Decision tree learning - Wikiwand](https://www.wikiwand.com/en/Decision_tree_learning)
