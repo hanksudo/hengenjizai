@@ -57,6 +57,7 @@
 - [angularjs-101: My repo to save all angular practice files.](https://github.com/hanksudo/angularjs-101)
 - [grunt-101: A demo to use GruntJS - JavaScript Task Runner](https://github.com/hanksudo/grunt-101)
 - [learn-generators-workshop: javascript generators practices](https://github.com/hanksudo/learn-generators-workshop)
+- [chef-101: Learn Chef (https://www.chef.io/)](https://github.com/hanksudo/chef-101)
 
 ## Solutions
 
