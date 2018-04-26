@@ -35,8 +35,8 @@
 
 - [pypi-info-generator: Script to auto generate Python package info on requirements.txt](https://github.com/hanksudo/pypi-info-generator)
 - [cocoapods-package-info: Know project's Cocoapod packages easily](https://github.com/hanksudo/cocoapods-package-info)
-- [GitHub - hanksudo/npm-package-info: Know project's bower packages easily](https://github.com/hanksudo/npm-package-info)
-- [GitHub - hanksudo/bower-package-info: Know project's bower packages easily](https://github.com/hanksudo/bower-package-info)
+- [npm-package-info: Know project's bower packages easily](https://github.com/hanksudo/npm-package-info)
+- [bower-package-info: Know project's bower packages easily](https://github.com/hanksudo/bower-package-info)
 
 ## Learning by doing
 
