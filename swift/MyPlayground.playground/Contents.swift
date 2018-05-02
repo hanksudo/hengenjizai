@@ -106,6 +106,9 @@ let http200Status = (statusCode: 200, description: "OK")
 print("The status code is \(http200Status.statusCode)")
 print("The status message \(http200Status.description)")
 
+(1, "zerba") < (2, "apple")
+(100, 200) > (50, 100)
+
 // ---------
 // Optionals
 
@@ -117,6 +120,10 @@ serverResponseCode = nil
 
 var surveyAnswer: String?
 
+let defaultColorName = "red"
+var userDefinedColorName: String?  // defaults to nil
+
+var colorNameToUse = userDefinedColorName ?? defaultColorName
 
 // -----------------------------------
 // If Statements and Forced Unwrapping
@@ -143,6 +150,39 @@ let implicitString: String = assumedString // no need exclamation mark
 // Error Handling
 // ignored...
 
+
+// -------------------------
 // Debugging with Assertions
 let age = -3
-assert(age >= 0, "A peron's age can't be less than zero.")
+// assert(age >= 0, "A peron's age can't be less than zero.")
+
+
+// --------------
+// Range Operator
+
+1...5
+for i in 1...5 {
+    print("\(i) times 5 is \(i * 5)")
+}
+
+// Half-Open Range Operator
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let count = names.count
+for i in 0..<count {
+    print("Person \(i + 1) is called \(names[i])")
+}
+
+for name in names[2...] {
+    print(name)
+}
+for name in names[...2] {
+    print(name)
+}
+for name in names[..<2] {
+    print(name)
+}
+
+let range = ...5
+range.contains(7)
+range.contains(4)
+range.contains(-1)
