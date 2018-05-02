@@ -186,3 +186,11 @@ let range = ...5
 range.contains(7)
 range.contains(4)
 range.contains(-1)
+
+
+func printMoneyString(dollars :Int, cents: Int) {
+    print("$\(dollars).\(cents)")
+}
+
+printMoneyString(dollars: 10, cents: 50)
+printMoneyString(dollars: 19, cents: 99)
