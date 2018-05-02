@@ -51,6 +51,10 @@
 - [angular2-tour-of-heroes: Learning Angular2 by doing!](https://github.com/hanksudo/angular2-tour-of-heroes)
 - [lbd-PitchPerfect: A Recording app (Swift)](https://github.com/hanksudo/lbd-PitchPerfect)
 
+### CoreML
+
+- [PlaceRecognizer: Image recognition with CoreML and Places205-GoogLeNet](https://github.com/hanksudo/PlaceRecognizer)
+
 
 ### Programming Language and frameworks
 
