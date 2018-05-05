@@ -49,8 +49,10 @@
 - [lbd-image-only-chrome-extension: A chrome extension filter all contents but images](https://github.com/hanksudo/lbd-image-only-chrome-extension)
 - [lbd-chrome-exts-samples-scraper: Download all Chrome extensions sample and extract it.](https://github.com/hanksudo/lbd-chrome-exts-samples-scraper)
 - [angular2-tour-of-heroes: Learning Angular2 by doing!](https://github.com/hanksudo/angular2-tour-of-heroes)
-- [lbd-PitchPerfect: A Recording app (Swift)](https://github.com/hanksudo/lbd-PitchPerfect)
+- [PitchPerfect: A Recording app (Swift)](https://github.com/hanksudo/lbd-PitchPerfect)
 - [MemeMe: 長輩圖產生器!? (Swift)](https://github.com/hanksudo/MemeMe)
+- [FlickrViewer: Use Flickr API to view photos (Swift)](https://github.com/hanksudo/FlickrViewer)
+
 
 ### CoreML
 
