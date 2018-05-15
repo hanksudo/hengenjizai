@@ -21,7 +21,7 @@ struct MyGithub: Codable {
     }
 }
 
-func main() {
+func decodeDemo() {
     guard let gitUrl = URL(string: "https://api.github.com/users/hanksudo") else { return }
     URLSession.shared.dataTask(with: gitUrl) { (data, response, error) in
         guard let data = data else { return }
@@ -40,40 +40,16 @@ func main() {
     }.resume()
 }
 
-main()
+func encodeDemo() {
+    // Encode
+    let me = MyGithub(name: "Hank Wang", location: "Taiwan", followers: 0, avatarUrl: nil, repos: 0)
+    let encoder = JSONEncoder()
+    let data = try! encoder.encode(me)
+    let string = String(data: data, encoding: .utf8)
+    print(string!)
+}
+
+decodeDemo()
+encodeDemo()
 
 PlaygroundPage.current.needsIndefiniteExecution = true
-
-
-//{
-//    "avatar_url": "https://avatars2.githubusercontent.com/u/467745?v=4",
-//    "bio": null,
-//    "blog": "",
-//    "company": "Health2Sync",
-//    "created_at": "2010-11-04T18:31:48Z",
-//    "email": null,
-//    "events_url": "https://api.github.com/users/hanksudo/events{/privacy}",
-//    "followers": 84,
-//    "followers_url": "https://api.github.com/users/hanksudo/followers",
-//    "following": 457,
-//    "following_url": "https://api.github.com/users/hanksudo/following{/other_user}",
-//    "gists_url": "https://api.github.com/users/hanksudo/gists{/gist_id}",
-//    "gravatar_id": "",
-//    "hireable": null,
-//    "html_url": "https://github.com/hanksudo",
-//    "id": 467745,
-//    "location": "Taipei, Taiwan & Tokyo, Japan",
-//    "login": "hanksudo",
-//    "name": "Hank Wang",
-//    "organizations_url": "https://api.github.com/users/hanksudo/orgs",
-//    "public_gists": 144,
-//    "public_repos": 84,
-//    "received_events_url": "https://api.github.com/users/hanksudo/received_events",
-//    "repos_url": "https://api.github.com/users/hanksudo/repos",
-//    "site_admin": false,
-//    "starred_url": "https://api.github.com/users/hanksudo/starred{/owner}{/repo}",
-//    "subscriptions_url": "https://api.github.com/users/hanksudo/subscriptions",
-//    "type": "User",
-//    "updated_at": "2018-05-07T03:09:10Z",
-//    "url": "https://api.github.com/users/hanksudo"
-//}
