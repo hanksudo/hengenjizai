@@ -1,4 +1,6 @@
 // Swift 4 with struct with codable
+// JSON Encoding and Decoding
+
 import PlaygroundSupport
 import UIKit
 
