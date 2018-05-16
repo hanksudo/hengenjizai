@@ -1,10 +1,11 @@
-from abc import ABCMeta, abstractmethod
+import abc
+import six
 import inspect
 
+@six.add_metaclass(abc.ABCMeta)
 class GF(object):
-    __metaclass__ = ABCMeta
 
-    @abstractmethod
+    @abc.abstractmethod
     def name(self):
         raise NotImplemented
 
@@ -16,7 +17,7 @@ class F(GF):
     def name(self):
         return "Hank"
 
-    @abstractmethod
+    @abc.abstractmethod
     def age(self):
         raise NotImplemented
 
@@ -40,16 +41,16 @@ def main():
         print(e)
 
     # is Abstract
-    print(inspect.isabstract(GF))
-    print(inspect.isabstract(F))
-    print(inspect.isabstract(C))
+    print("{} is abstract class: {}".format(GF.__name__, inspect.isabstract(GF)))
+    print("{} is abstract class: {}".format(F.__name__, inspect.isabstract(F)))
+    print("{} is abstract class: {}".format(C.__name__, inspect.isabstract(C)))
 
     # subclasses
-    print(GF.__subclasses__())
-    print(F.__subclasses__())
+    print("GF sub classes: {}".format(GF.__subclasses__()))
+    print("F sub classes: {}".format(F.__subclasses__()))
 
     # get all concrete sub-classes
-    print(get_all_subclasses(GF))
+    print("concrete sub-classes: {}".format(get_all_subclasses(GF)))
 
 
 def get_all_subclasses(cls):
