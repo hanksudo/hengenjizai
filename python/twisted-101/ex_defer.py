@@ -7,10 +7,9 @@ def listCallback(results):
         print "Successful? %s" % isSuccess
         print "Content Length: %s" % len(content)
 
-
 def main():
-    d1 = getPage('http://www.google.com')
-    d2 = getPage('http://yahoo.com')
+    d1 = getPage("https://www.google.com")
+    d2 = getPage("https://yahoo.com")
     dl = defer.DeferredList([d1, d2])
     dl.addCallback(listCallback)
     dl.addCallback(lambda x: reactor.stop())
