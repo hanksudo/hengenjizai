@@ -6,10 +6,14 @@
 # Last Updated: 2016/10/05
 
 import json
-import urllib2
+
 from bs4 import BeautifulSoup
 from datetime import datetime
 import time
+try:
+    from urllib.request import urlopen
+except ImportError:
+    from urllib2 import urlopen
 
 currencies_list = ["JPY", "GBP", "ZAR", "AUD", "NZD", "CAD", "SEK", "USD", "CNY"]
 
@@ -25,16 +29,16 @@ def getCurrencyRate():
         }
 
         url = "http://rate.bot.com.tw/xrt"
-        data = urllib2.urlopen(url).read()
+        data = urlopen(url).read()
         soup = BeautifulSoup(data, "html.parser")
         for ele in soup.select('a[href*="/xrt/history/"]'):
             currency = ele["href"][-3:]
             if currency in currencies_list:
                 results = ele.parent.find_next_siblings("td")
-                response["buy_cash"][currency.lower()] = results[0].encode_contents()
-                response["sell_cash"][currency.lower()] = results[1].encode_contents()
-                response["buy_spot"][currency.lower()] = results[2].encode_contents()
-                response["sell_spot"][currency.lower()] = results[3].encode_contents()
+                response["buy_cash"][currency.lower()] = results[0].get_text()
+                response["sell_cash"][currency.lower()] = results[1].get_text()
+                response["buy_spot"][currency.lower()] = results[2].get_text()
+                response["sell_spot"][currency.lower()] = results[3].get_text()
 
         return response
     else:
@@ -46,4 +50,4 @@ def isNormalDay():
 
 
 if __name__ == "__main__":
-    print json.dumps(getCurrencyRate())
+    print(json.dumps(getCurrencyRate()))

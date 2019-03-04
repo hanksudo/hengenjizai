@@ -9,6 +9,6 @@ Exercise 2 : Comments And Pound Characters
 """
 
 # first line of comment
-print "Hello, I am Hank."
-print "おげんりですか"  # comment after statement
-print "中文字也是沒問題"
+print("Hello, I am Hank.")
+print("おげんりですか")  # comment after statement
+print("中文字也是沒問題")

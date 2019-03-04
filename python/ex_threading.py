@@ -9,12 +9,12 @@ class MyClass(threading.Thread):
         super(MyClass, self).__init__()
 
     def run(self):
-        for i in xrange(ITERATIONS):
+        for i in range(ITERATIONS):
             pass
-        print self.num
+        print(self.num)
 
 def main():
-    for j in xrange(10):
+    for j in range(10):
         t = MyClass(j)
         t.start()
 

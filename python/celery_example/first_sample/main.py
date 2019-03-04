@@ -22,7 +22,7 @@ def arrange_tasks():
 
 i = 1
 while 1:
-    print "Arrange events: %g, %s" % (i, datetime.now())
+    print("Arrange events: %g, %s" % (i, datetime.now()))
     arrange_tasks()
     i = i + 1
     sleep(10)

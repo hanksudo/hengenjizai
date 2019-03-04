@@ -7,7 +7,7 @@ class MyIter(object):
         self.list = [1, 2, 3, 4, 5]
 
     def read(self):
-        for ele in xrange(len(self.list)):
+        for ele in range(len(self.list)):
             yield ele
 
     def __iter__(self):

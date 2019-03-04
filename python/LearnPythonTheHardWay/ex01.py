@@ -8,6 +8,6 @@ Exercise 1 : A Good First Program
 @version 20140314
 """
 
-print "Hello, I am Hank."
-print "おげんきですか"
-print "中文字也是沒問題"
+print("Hello, I am Hank.")
+print("おげんきですか")
+print("中文字也是沒問題")
