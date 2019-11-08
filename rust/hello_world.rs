@@ -1,4 +1,5 @@
 fn main() {
+    // println is a Rust macro
     println!("Hello, world!");
     println!("{}, {}!", "Hello", "world"); // Hello, world!
     println!("{0}, {1}!", "Hello", "world"); // Hello, world!
