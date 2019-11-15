@@ -34,23 +34,28 @@ class CarFactory(metaclass=ABCMeta):
         pass
 
 class CarManufacturer(Entity):
-    cars: List[Car] = []
+    _cars: List[Car] = []
 
     def __init__(self, car_factory: CarFactory):
         self.car_factory = car_factory
 
     def construct_cars(self, num_of_cars: int):
         for _ in range(num_of_cars):
-            self.cars.append(self.car_factory.create())
+            self._cars.append(self.car_factory.create())
+
+    @property
+    def cars(self):
+        return self._cars
 
 class PriusCarFactory(CarFactory):
     brand = Car.types.PRIUS
     color = Car.colors.RED
     name = "My favorite car"
-    
+
     def create(self):
         return Car(self.brand, self.color, self.name)
 
 if __name__ == "__main__":
     manufacturer = CarManufacturer(PriusCarFactory())
     manufacturer.construct_cars(num_of_cars=40)
+    print(manufacturer.cars)
