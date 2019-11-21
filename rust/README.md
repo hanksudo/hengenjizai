@@ -14,6 +14,7 @@ rustup component add rustfmt --toolchain stable-x86_64-apple-darwin
 
 # check version
 rustc --version
+cargo --version
 ```
 
 ## Execute
