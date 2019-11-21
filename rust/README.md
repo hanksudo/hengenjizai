@@ -33,6 +33,9 @@ cargo run
 
 # Check binary
 cargo check
+
+# documentation
+cargo doc --open
 ```
 
 ## References
