@@ -6,7 +6,7 @@
 # install
 curl https://sh.rustup.rs -sSf | sh
 
-# update
+# Update Rust toolchains and rustup
 rustup update
 
 # install component rustfmt
@@ -20,8 +20,19 @@ cargo --version
 ## Execute
 
 ```bash
+# single file
 rustc hello_world.rs
 ./hello_world
+
+cargo new project_name
+cargo build
+cargo build --release
+
+# Auto build if source code modified before run
+cargo run
+
+# Check binary
+cargo check
 ```
 
 ## References
