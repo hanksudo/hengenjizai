@@ -2,8 +2,14 @@ import dataclasses
 from abc import abstractmethod
 from typing import TypeVar, Generic
 
-Request = TypeVar('Request')
-Response = TypeVar('Response')
+class BaseRequest:
+    pass
+
+class BaseResponse:
+    pass
+
+Request = TypeVar("Request", bound=BaseRequest)
+Response = TypeVar("Response", bound=BaseResponse)
 
 class UseCase(Generic[Request, Response]):
     @abstractmethod
@@ -11,11 +17,11 @@ class UseCase(Generic[Request, Response]):
         raise NotImplementedError
 
 @dataclasses.dataclass
-class MyRequest(Generic[Request]):
+class MyRequest(BaseRequest):
     name: str
     age: int
 
-class MyResponse(Generic[Response]):
+class MyResponse(BaseResponse):
     pass
 
 class ConcreteUseCase(UseCase[MyRequest, MyResponse]):
