@@ -30,6 +30,7 @@
 - [osx-wifi-password: Get OSX currently connected WIFI password on shell script](https://github.com/hanksudo/osx-wifi-password)
 - [sublime-translate: Sublime Text 2 Plugin to translate selected characters to specific language.](https://github.com/hanksudo/sublime-translate)
 - [node-github-hook-deploy: Deploy production environment by Github hook](https://github.com/hanksudo/node-github-hook-deploy)
+- [jp-cities-codes: Convert 都道府県コード及び市区町村コード to json](https://github.com/hanksudo/jp-cities-codes)
 
 ### Project packages info generator
 
@@ -73,6 +74,7 @@
 - [checkio: My solution for checkio.org](https://github.com/hanksudo/checkio)
 - [letterpress-solver: A solver for Letterpress](https://github.com/hanksudo/letterpress-solver)
 - [nodeschool: My nodeschool solutions](https://github.com/hanksudo/nodeschool)
+- [Exercism - my exercism solutions](https://github.com/hanksudo/exercism)
 
 ## g0v
 
