@@ -97,10 +97,14 @@ if isRaining {
 // ------
 // Tuples
 
+// http404Error is of type (Int, String)
 let http404Error = (404, "Not Found")
-var (statusCode, statusMessage) = http404Error
+let (statusCode, statusMessage) = http404Error
 print("The status code is \(statusCode), \(http404Error.0)")
 print("The status message is \(statusMessage), \(http404Error.1)")
+
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
 
 let http200Status = (statusCode: 200, description: "OK")
 print("The status code is \(http200Status.statusCode)")
