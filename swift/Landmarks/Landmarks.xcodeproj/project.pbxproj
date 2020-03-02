@@ -97,6 +97,7 @@
 				8F2DB33C240D61DD0092CC2E /* AppDelegate.swift */,
 				8F2DB33E240D61DD0092CC2E /* SceneDelegate.swift */,
 				8F2DB340240D61DD0092CC2E /* LandmarkDetail.swift */,
+				8FFD0D0A240D7336008112A5 /* LandmarkList.swift */,
 				8F2DB342240D61DE0092CC2E /* Assets.xcassets */,
 				8F2DB347240D61DE0092CC2E /* LaunchScreen.storyboard */,
 				8F2DB34A240D61DE0092CC2E /* Info.plist */,
@@ -122,7 +123,6 @@
 				8F2DB352240D65650092CC2E /* CircleImage.swift */,
 				8FFD0CE6240D66C3008112A5 /* MapView.swift */,
 				8FFD0D08240D715F008112A5 /* LandmarkRow.swift */,
-				8FFD0D0A240D7336008112A5 /* LandmarkList.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
