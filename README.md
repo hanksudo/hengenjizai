@@ -75,6 +75,8 @@
 - [letterpress-solver: A solver for Letterpress](https://github.com/hanksudo/letterpress-solver)
 - [nodeschool: My nodeschool solutions](https://github.com/hanksudo/nodeschool)
 - [Exercism - my exercism solutions](https://github.com/hanksudo/exercism)
+- [Leetcode](https://github.com/hanksudo/leetcode)
+- [Hackerrank](https://github.com/hanksudo/hackerrank)
 
 ## g0v
 
