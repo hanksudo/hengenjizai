@@ -27,6 +27,8 @@
 		8F5601C9240EA783002D7208 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5601C8240EA783002D7208 /* HikeDetail.swift */; };
 		8F5601CB240EA7E4002D7208 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F5601CA240EA7E4002D7208 /* hikeData.json */; };
 		8F5601CD240EA83E002D7208 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5601CC240EA83E002D7208 /* GraphCapsule.swift */; };
+		8F5601CF240EAC78002D7208 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5601CE240EAC78002D7208 /* Home.swift */; };
+		8F5601D1240EAE87002D7208 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5601D0240EAE87002D7208 /* CategoryRow.swift */; };
 		8FFD0CE7240D66C3008112A5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD0CE6240D66C3008112A5 /* MapView.swift */; };
 		8FFD0CEA240D6E0B008112A5 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD0CE9240D6E0B008112A5 /* Landmark.swift */; };
 		8FFD0CED240D6E3B008112A5 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD0CEC240D6E3B008112A5 /* landmarkData.json */; };
@@ -69,6 +71,8 @@
 		8F5601C8240EA783002D7208 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		8F5601CA240EA7E4002D7208 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		8F5601CC240EA83E002D7208 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
+		8F5601CE240EAC78002D7208 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Landmarks/Home.swift; sourceTree = SOURCE_ROOT; };
+		8F5601D0240EAE87002D7208 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		8FFD0CE6240D66C3008112A5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8FFD0CE9240D6E0B008112A5 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		8FFD0CEC240D6E3B008112A5 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				8FFD0D0A240D7336008112A5 /* LandmarkList.swift */,
 				8F5601C2240EA72C002D7208 /* HikeView.swift */,
 				8F5601C8240EA783002D7208 /* HikeDetail.swift */,
+				8F5601CE240EAC78002D7208 /* Home.swift */,
 				8F2DB342240D61DE0092CC2E /* Assets.xcassets */,
 				8F2DB347240D61DE0092CC2E /* LaunchScreen.storyboard */,
 				8F2DB34A240D61DE0092CC2E /* Info.plist */,
@@ -131,6 +136,7 @@
 				8FFD0CE8240D6DF5008112A5 /* Models */,
 				8F2DB355240D65800092CC2E /* Supporting Views */,
 				8F2DB344240D61DE0092CC2E /* Preview Content */,
+				8F5601D0240EAE87002D7208 /* CategoryRow.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5601D1240EAE87002D7208 /* CategoryRow.swift in Sources */,
 				8F5601CD240EA83E002D7208 /* GraphCapsule.swift in Sources */,
 				8F5601BB240E9062002D7208 /* HexagonParameters.swift in Sources */,
 				8FFD0CEF240D6FF3008112A5 /* Data.swift in Sources */,
@@ -289,6 +296,7 @@
 				8FFD0D0B240D7336008112A5 /* LandmarkList.swift in Sources */,
 				8F5601BF240EA0F0002D7208 /* BadgeSymbol.swift in Sources */,
 				8F5601C1240EA2C6002D7208 /* RotatedBadgeSymbol.swift in Sources */,
+				8F5601CF240EAC78002D7208 /* Home.swift in Sources */,
 				8F2DB33F240D61DD0092CC2E /* SceneDelegate.swift in Sources */,
 				8F5601BD240E9FF5002D7208 /* BadgeBackground.swift in Sources */,
 				8F2DB341240D61DD0092CC2E /* LandmarkDetail.swift in Sources */,
