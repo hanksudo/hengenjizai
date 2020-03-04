@@ -33,7 +33,7 @@ struct CategoryHome: View {
         NavigationView {
             List {
                 PageView(features.map { FeatureCard(landmark: $0) })
-                    .aspectRatio(3/2, contentMode: .fit)
+                    .scaledToFill()
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted(), id: \.self) { key in
