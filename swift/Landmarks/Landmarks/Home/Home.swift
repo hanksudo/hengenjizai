@@ -15,10 +15,6 @@ struct CategoryHome: View {
         )
     }
     
-    var featuredLandmarks: [Landmark] {
-        landmarkData.filter { $0.isFeatured }
-    }
-    
     @State var showingProfile = false
     @EnvironmentObject var userData: UserData
     
@@ -36,10 +32,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                FeaturedLandmarks(landmarks: featuredLandmarks)
+                PageView(features.map { FeatureCard(landmark: $0) })
                     .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted(), id: \.self) { key in
@@ -58,13 +52,6 @@ struct CategoryHome: View {
                     .environmentObject(self.userData)
             }
         }
-    }
-}
-
-struct FeaturedLandmarks: View {
-    var landmarks: [Landmark]
-    var body: some View {
-        landmarks[0].image.resizable()
     }
 }
 
