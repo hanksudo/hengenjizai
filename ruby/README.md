@@ -7,9 +7,17 @@ brew install ruby
 echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
 ```
 
-## References
+
+## Links
 
 - [Ruby Programming Language](https://www.ruby-lang.org/en/)
+- [The Ruby Style Guide](https://rubystyle.guide/)
+- [RubyGems is a package management framework for Ruby](https://rubygems.org/)
+- [Bundler: The best way to manage a Ruby application's gems](https://bundler.io/)
+- [RuboCop: The Ruby Linter that Serves and Protects](https://docs.rubocop.org/en/stable/)
+
+## Learn
+
 - [Ruby From Other Languages](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/)
 - [Learn Ruby with the Edgecase Ruby Koans](http://rubykoans.com/)
 - [Learn Ruby: Introduction to Ruby Reference Guide | Codecademy](https://www.codecademy.com/learn/learn-ruby/modules/learn-ruby-introduction-to-ruby-u/cheatsheet)
