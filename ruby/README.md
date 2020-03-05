@@ -11,4 +11,5 @@ echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
 
 - [Ruby Programming Language](https://www.ruby-lang.org/en/)
 - [Ruby From Other Languages](https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/)
+- [Learn Ruby with the Edgecase Ruby Koans](http://rubykoans.com/)
 - [Ruby Tutorial: Learn Ruby For Free | Codecademy](https://www.codecademy.com/learn/learn-ruby)
