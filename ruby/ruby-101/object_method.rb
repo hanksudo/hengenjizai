@@ -13,3 +13,5 @@ puts str
 puts 'hello world'.upcase
 puts 'HELLO WORLD'.downcase
 puts 'Super'.include? 'S'
+
+age.respond_to?(:next)

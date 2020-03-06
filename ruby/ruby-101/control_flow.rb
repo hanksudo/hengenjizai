@@ -7,6 +7,8 @@ else
   puts 'nothing happen'
 end
 
+puts 'it\'s true!' if true
+
 puts true && false
 puts true || false
 

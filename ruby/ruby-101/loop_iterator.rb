@@ -28,6 +28,12 @@ puts 'each'
   puts c
 end
 
+# collect
+puts 'collect'
+l = [1, 2, 3]
+l = l.collect { |n| n * 2 } # return modified number
+puts l
+
 # infinite, break and next
 puts 'infinite, break and next'
 i = 10
@@ -41,3 +47,7 @@ end
 
 # times
 3.times { puts '3 times' }
+
+'L'.upto('P') { |c| puts c }
+3.upto(5) { |n| puts n }
+5.downto(3) { |n| puts n }
