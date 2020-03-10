@@ -46,3 +46,6 @@ puts good_movies
 
 movie_ratings.each_key { |k| puts k }
 movie_ratings.each_value { |v| puts v }
+
+puts %w[1 2 3].map(&:to_i)
+puts [1, 2, 3].map(&:to_s)
