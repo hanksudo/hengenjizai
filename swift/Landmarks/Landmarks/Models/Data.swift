@@ -5,7 +5,6 @@
 //  Created by Hank Wang on 2020/3/3.
 //
 
-import UIKit
 import SwiftUI
 import CoreLocation
 import ImageIO
