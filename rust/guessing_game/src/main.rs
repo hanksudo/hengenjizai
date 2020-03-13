@@ -5,6 +5,7 @@ use rand::Rng;
 fn main() {
     println!("Guess the number!");
 
+    // Generate random number for answer
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
     // println!("The secret number is {}", secret_number);
@@ -19,6 +20,7 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
         
+        // convert string to unsigned 32-bit integer
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(err) => {
