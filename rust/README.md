@@ -43,15 +43,12 @@ cargo update
 cargo doc --open
 ```
 
-## Syntax
-
-```rust
-
-```
-
 ## References
 
 - [Rust programming language](https://www.rust-lang.org/)
+- [Rust Package Registry](https://crates.io/)
+- [Docs.rs](https://docs.rs/)
+- [std - Rust](https://doc.rust-lang.org/stable/std/)
 - [Learning Rust](https://learning-rust.github.io/)
 - [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)
