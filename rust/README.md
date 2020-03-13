@@ -36,9 +36,9 @@ cargo run
 # Check binary
 cargo check
 
-# 
+# Update dependencies listed in Cargo.lock
 cargo update
-
+    
 # documentation
 cargo doc --open
 ```
@@ -46,13 +46,7 @@ cargo doc --open
 ## Syntax
 
 ```rust
-let foo = 5; // immutable
-let mut bar = 5; // mutable
 
-let x = 5;
-let y = 6;
-
-println!("x = {} and y = {}", x, y);
 ```
 
 ## References
