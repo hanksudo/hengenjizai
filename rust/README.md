@@ -55,4 +55,6 @@ cargo doc --open
 - [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)
 
 - [Rust Playground](https://play.rust-lang.org/)
-- 
+- [awesome-rust: A curated list of Rust code and resources.](https://github.com/rust-unofficial/awesome-rust)
+
+
