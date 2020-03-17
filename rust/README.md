@@ -46,9 +46,13 @@ cargo doc --open
 ## References
 
 - [Rust programming language](https://www.rust-lang.org/)
+- [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html)
 - [Rust Package Registry](https://crates.io/)
 - [Docs.rs](https://docs.rs/)
 - [std - Rust](https://doc.rust-lang.org/stable/std/)
 - [Learning Rust](https://learning-rust.github.io/)
 - [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)
+
+- [Rust Playground](https://play.rust-lang.org/)
+- 
