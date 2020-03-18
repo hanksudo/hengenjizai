@@ -1,4 +1,14 @@
 fn main() {
+    // &str - unicode string slices
+    let a = "Hello, world."; //a: &'static str
+    let b: &str = "こんにちは、世界！";
+
+    // Boolean
+    let t = true;
+    let f: bool = false;
+
+    let (i, j) = (2, 4);
+
     // Mutable
     let mut x = 5;
     println!("The value of x is: {}", x);
