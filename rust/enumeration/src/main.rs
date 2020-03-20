@@ -22,4 +22,12 @@ fn main() {
 
     let m = Message::Write(String::from("hello"));
     m.call();
+
+    let quit = Message::Quit;
+
+    match quit {
+        Message::Quit => println!("Quit"),
+        Message::Write(s) => println!("{}", s),
+        _ => return
+    }
 }
