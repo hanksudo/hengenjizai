@@ -66,3 +66,11 @@ cargo doc --open
 - [Rust-101: main.rs](https://www.ralfj.de/projects/rust-101/main.html)
 
 - [awesome-rust: A curated list of Rust code and resources.](https://github.com/rust-unofficial/awesome-rust)
+
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+
+- https://lib.rs
+
+- [Rust Language Cheat Sheet](https://cheats.rs/)
+
+
