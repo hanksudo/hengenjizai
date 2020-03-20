@@ -63,6 +63,6 @@ cargo doc --open
 
 - [Learning Rust](https://learning-rust.github.io/)
 
+- [Rust-101: main.rs](https://www.ralfj.de/projects/rust-101/main.html)
+
 - [awesome-rust: A curated list of Rust code and resources.](https://github.com/rust-unofficial/awesome-rust)
-
-
