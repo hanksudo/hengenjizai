@@ -1,3 +1,5 @@
+use std::mem;
+
 fn main() {
     // Tuple
     // - fixed length
@@ -13,6 +15,7 @@ fn main() {
 
 
     // Array
+    // [T; size]
     // - fixed length
     // - every element have the same type
     let a = [3; 5]; // let a = [3, 3, 3, 3, 3]
@@ -20,4 +23,6 @@ fn main() {
     let first = a[0];
     let second = b[1];
     println!("{} {}", first, second);
+
+    println!("array a occupies {} bytes", mem::size_of_val(&b));
 }
