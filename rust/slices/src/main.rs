@@ -6,6 +6,14 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let slice = &a[1..3];
     println!("{:?}", slice);
+
+    for c in "नमस्ते".chars() {
+        println!("{}", c);
+    }
+
+    for b in "नमस्ते".bytes() {
+        println!("{}", b);
+    }
 }
 
 fn first_word(s: &str) -> &str {
