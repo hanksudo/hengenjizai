@@ -73,4 +73,4 @@ cargo doc --open
 
 - [Rust Language Cheat Sheet](https://cheats.rs/)
 
-
+- [Rust Tips and Tricks :: Jon Gjengset](https://thesquareplanet.com/blog/rust-tips-and-tricks/)
