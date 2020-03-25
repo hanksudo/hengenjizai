@@ -1,8 +1,9 @@
 class Person
-  attr_accessor :name, :age
+  attr_accessor :name, :age :instance_var
   def initialize(name, age)
     @name = name
     @age = age
+    @instance_var
   end
 end
 
