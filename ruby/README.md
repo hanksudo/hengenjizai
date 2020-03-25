@@ -21,7 +21,7 @@ echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
     - [GitHub - rubocop-hq/rails-style-guide: A community-driven Ruby on Rails style guide](https://github.com/rubocop-hq/rails-style-guide)
 - [awesome-ruby: A collection of awesome Ruby libraries, tools, frameworks and software](https://github.com/markets/awesome-ruby)
 - [The Ruby Toolbox - Know your options!](https://www.ruby-toolbox.com/)
-
+- [Ruby-style-guide - Womply - Relish](https://relishapp.com/womply/ruby-style-guide/docs)
 
 ## Learn
 
