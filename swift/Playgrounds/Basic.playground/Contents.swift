@@ -5,9 +5,10 @@ import UIKit
 // -----------------------
 // Constants and Variables
 
+let PI = 3.14
+let myConstant = 54321
 var str = "Hello, playground"
 var year = 2018
-var pi = 3.14
 var isRaining = true
 
 let languageName = "Swift"
@@ -27,6 +28,7 @@ var red, green, blue: Double
 // -----
 // Print
 
+print("Hello, world!")
 print("The current value of languageName is \(languageName)")
 
 let multiplier = 3
@@ -93,6 +95,24 @@ if isRaining {
     print("no need umberlla")
 }
 
+// ------
+// Array, Dictionary
+var emptyArray = [String]()
+var shoppingList = ["catfish", "water", "tulips"]
+shoppingList[1] = "bottle of water"
+print(shoppingList)
+shoppingList.append("blue paint")
+print(shoppingList)
+shoppingList = []
+
+var emptyDictionary = [String: Float]()
+var occupations = [
+    "Malcolm": "Captain",
+    "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+print(occupations)
+occupations = [:]
 
 // ------
 // Tuples
@@ -127,7 +147,9 @@ var surveyAnswer: String?
 let defaultColorName = "red"
 var userDefinedColorName: String?  // defaults to nil
 
+// if optional value is missing, use default value instead.
 var colorNameToUse = userDefinedColorName ?? defaultColorName
+assert(colorNameToUse == defaultColorName)
 
 // -----------------------------------
 // If Statements and Forced Unwrapping
@@ -149,6 +171,9 @@ let forcedString: String = possibleString! // require an exclamation mark
 let assumedString: String! = "An implictly unwrapped optional string."
 let implicitString: String = assumedString // no need exclamation mark
 
+
+// --------------
+// Switch
 
 // --------------
 // Error Handling
@@ -191,7 +216,7 @@ range.contains(7)
 range.contains(4)
 range.contains(-1)
 
-
+    
 func printMoneyString(dollars :Int, cents: Int) {
     print("$\(dollars).\(cents)")
 }
