@@ -1,38 +1,58 @@
 //: Playground - noun: a place where people can play
+// https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
 
 import UIKit
-
-// -----------------------
-// Constants and Variables
-
-let PI = 3.14
-let myConstant = 54321
-var str = "Hello, playground"
-var year = 2018
-var isRaining = true
-
-let languageName = "Swift"
-//languageName = "Swift++" // error
-
-let maxmiumNumberOfLoginAttempts = 10
-var currentLoginAttempt = 0
-
-// multiple variables
-var (x, y, z) = (1, 2, 3)
-print(x, y, z)
-
-// Type Annotations
-var welcomeMessage: String
-var red, green, blue: Double
 
 // -----
 // Print
 
 print("Hello, world!")
-print("The current value of languageName is \(languageName)")
 
 let multiplier = 3
 print("\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)")
+
+// -----------------------
+// Constants and Variables
+
+var myVariable = 42
+myVariable = 52
+var str = "Hello, playground"
+var year = 2018
+var isRaining = true
+
+let myConstant = 54321
+let PI = 3.14
+
+let languageName = "Swift"
+//languageName = "Swift++" // reassign error
+print("The current value of languageName is \(languageName)")
+
+// multiple variables
+var (x, y, z) = (1, 2, 3)
+print(x, y, z)
+
+var a = 0.0, b = 0.0, c = 0.0
+
+// Type Annotations
+var welcomeMessage: String
+var red, green, blue: Double
+
+let maximumNumberOfLoginAttempts = 10
+var currentLoginAttempt = 0
+
+let implicitInteger = 70
+let implicitDouble = 70.0
+let explicitDouble: Double = 70
+
+// Multiple lines string
+
+var apples = 3
+let quotation = """
+I said "I have \(apples) apples."
+And then I eat one apple.
+"""
+
+
 
 // --------
 // Comments
@@ -95,7 +115,7 @@ if isRaining {
     print("no need umberlla")
 }
 
-// ------
+// -----------------
 // Array, Dictionary
 var emptyArray = [String]()
 var shoppingList = ["catfish", "water", "tulips"]
@@ -113,6 +133,13 @@ var occupations = [
 occupations["Jayne"] = "Public Relations"
 print(occupations)
 occupations = [:]
+
+// ---
+// For
+var items = ["item 1", "item 2", "item 3"]
+for item in items {
+    print(item)
+}
 
 // ------
 // Tuples
@@ -135,6 +162,17 @@ print("The status message \(http200Status.description)")
 
 // ---------
 // Optionals
+
+var optionalString: String? = "hello"
+print(optionalString == nil)
+
+var optionalName: String? = "Hank Wang"
+if let name = optionalName {
+    print("Hello, my name is \(name)")
+} else {
+    // if optionalName is nil
+    print("Don't know who you are.")
+}
 
 let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)
@@ -174,6 +212,19 @@ let implicitString: String = assumedString // no need exclamation mark
 
 // --------------
 // Switch
+
+let vegetable = "red pepper"
+
+switch vegetable {
+case "celery":
+    print("Add some raisins and make ants on a log.")
+case "crumber", "watercress":
+    print("That would make a good tea sandwich.")
+case let x where x.hasSuffix("pepper"):
+    print("Is it a spicy \(x)?")
+default:
+    print("Everything tastes good in soup.")
+}
 
 // --------------
 // Error Handling
