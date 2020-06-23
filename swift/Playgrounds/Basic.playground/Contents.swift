@@ -134,12 +134,48 @@ occupations["Jayne"] = "Public Relations"
 print(occupations)
 occupations = [:]
 
-// ---
-// For
+// ----
+// Loop
+
+// for-in
 var items = ["item 1", "item 2", "item 3"]
 for item in items {
     print(item)
 }
+
+// 0 ~ 3
+for i in 0..<4 {
+    print(i)
+}
+
+// for-in iterate over items in a dictionary
+let interestingNumbers = [
+    "Prime": [2, 3, 5, 7, 11, 13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1, 4, 9, 16, 25],
+]
+var largest = 0
+for (_, numbers) in interestingNumbers {
+    for number in numbers {
+        if number > largest {
+            largest = number
+        }
+    }
+}
+print(largest)
+
+// while
+var n = 2
+while n < 10 {
+    n += 1
+}
+print(n)
+
+n = 2
+repeat {
+    n += 1
+} while n < 10
+print(n)
 
 // ------
 // Tuples
