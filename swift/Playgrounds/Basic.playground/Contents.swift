@@ -120,10 +120,16 @@ if isRaining {
 var emptyArray = [String]()
 var shoppingList = ["catfish", "water", "tulips"]
 shoppingList[1] = "bottle of water"
-print(shoppingList)
 shoppingList.append("blue paint")
-print(shoppingList)
+shoppingList += ["one more item"]
+shoppingList.insert("airpod", at: 2)
+shoppingList.remove(at: 2)
+shoppingList
 shoppingList = []
+
+var prices: [Int] = [30, 40, 50]
+prices.reduce(0, +)  // sum
+prices.count         // count
 
 var emptyDictionary = [String: Float]()
 var occupations = [
@@ -131,8 +137,20 @@ var occupations = [
     "Kaylee": "Mechanic",
 ]
 occupations["Jayne"] = "Public Relations"
-print(occupations)
 occupations = [:]
+
+var myDict = [String: Int]()
+myDict["apple"] = 188
+myDict
+myDict.updateValue(190, forKey: "apple")
+myDict
+myDict["apple"] = 200
+myDict
+myDict.removeValue(forKey: "apple")
+myDict
+myDict["apple"] = nil
+myDict
+myDict.isEmpty
 
 // ----
 // Loop
@@ -310,3 +328,21 @@ func printMoneyString(dollars :Int, cents: Int) {
 
 printMoneyString(dollars: 10, cents: 50)
 printMoneyString(dollars: 19, cents: 99)
+
+
+// Sets
+// https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID484
+// contains
+// remove
+// removeAll
+// intersection (AND)
+// union (OR)
+// symmetricDifference (NAND)
+//
+
+var consonants = Set<Character>()
+var vowels: Set = ["A", "E", "I", "O", "U"]
+vowels.count
+vowels.isEmpty
+vowels.insert("A")
+vowels
