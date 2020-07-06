@@ -346,3 +346,19 @@ vowels.count
 vowels.isEmpty
 vowels.insert("A")
 vowels
+
+// Subscripts
+// https://docs.swift.org/swift-book/LanguageGuide/Subscripts.html
+struct Repeater {
+    let times: Int
+    subscript(number: Int) -> Int {
+        times * number
+    }
+    subscript(repeatStrng: String) -> String {
+        String(repeating: repeatStrng, count: times)
+    }
+}
+
+let repeater = Repeater(times: 3)
+repeater[3]  // 9
+repeater["One"]  // OneOneOne
