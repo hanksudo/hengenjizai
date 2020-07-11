@@ -28,3 +28,5 @@
   - repeat
 - Function
 - Closure
+- Class
+- Enumerations and Structures

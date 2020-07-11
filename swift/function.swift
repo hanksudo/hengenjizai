@@ -56,7 +56,7 @@ func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     return false
 }
 func lessThanTen(number: Int) -> Bool {
-    return number < 10
+    number < 10
 }
 var numbers = [20, 19, 7, 12]
 print(hasAnyMatches(list: numbers, condition: lessThanTen))
