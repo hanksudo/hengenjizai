@@ -29,4 +29,6 @@
 - Function
 - Closure
 - Class
-- Enumerations and Structures
+- Enumerations
+- Structures
+  - One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
