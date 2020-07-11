@@ -3,3 +3,5 @@ shoppingList[1] = "bottle of water"
 shoppingList.append("blue paint")
 print(shoppingList)
 
+let emptyArray = =[String]()
+let anotherEmptyArray = []
