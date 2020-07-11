@@ -31,6 +31,51 @@ if let newRank = Rank(rawValue: 11) {
     print(newRank.simpleDescription())
 }
 
+enum Suit {
+    case spades, hearts, diamonds, clubs
+
+    func simpleDescription() -> String {
+        switch self {
+        case .spades:
+            return "spades"
+        case .hearts:
+            return "hearts"
+        case .diamonds:
+            return "diamonds"
+        case .clubs:
+            return "clubs"
+        }
+    }
+
+    func color() -> String {
+        switch self {
+        case .spades, .clubs:
+            return "black"
+        case .hearts, .diamonds:
+            return "red"
+        }
+    }
+}
+var hearts = Suit.hearts
+print(hearts)
+print(hearts.simpleDescription())
+print(hearts.color())
+
+struct Card {
+    var rank: Rank
+    var suit: Suit
+    func simpleDescription() -> String {
+        return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+    }
+}
+
+let threeOfSpades = Card(rank: .three, suit: .spades)
+print(threeOfSpades.simpleDescription())
+
+for color in Suit.allCases {
+    print(color)
+}
+
 
 enum ServerResponse {
     case result(String, String)
