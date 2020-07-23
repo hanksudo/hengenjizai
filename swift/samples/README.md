@@ -14,5 +14,7 @@
 - Closure
 - Class
 - Enumerations and Structures
+- Protocols and Extensions
+- Error handling
 
 > One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
