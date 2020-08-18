@@ -4,7 +4,7 @@ enum PrinterError: Error {
     case onFire
 }
 
-func send(job: Int, toPrinter printerName: String) throws -> String {
+func send(job _: Int, toPrinter printerName: String) throws -> String {
     if printerName == "Never has toner" {
         throw PrinterError.noToner
     }
@@ -28,7 +28,6 @@ let printerFailure = try? send(job: 1884, toPrinter: "Never has toner")
 print("printerSuccess is nil:", printerSuccess == nil)
 print("printerFailure is nil:", printerFailure == nil)
 
-
 // defer
 var fridgeIsOpen = false
 let fridgeContent = ["milk", "eggs", "leftovers"]
@@ -42,5 +41,6 @@ func fridgeContains(_ food: String) -> Bool {
     let result = fridgeContent.contains(food)
     return result
 }
+
 print("Banana in the fridge:", fridgeContains("banana"))
 print("Is Fridge open?", fridgeIsOpen)

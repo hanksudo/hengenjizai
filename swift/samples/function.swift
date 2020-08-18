@@ -1,15 +1,15 @@
 func greet(person: String, day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
-print(greet(person: "Bob", day: "Tuesday"))
 
+print(greet(person: "Bob", day: "Tuesday"))
 
 // omit argument label and custom argument label
 func greet(_ person: String, on day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
-print(greet("John", on: "Wednesday"))
 
+print(greet("John", on: "Wednesday"))
 
 // return multiple values
 func values() -> (x: Int, y: Int, z: Int) {
@@ -18,10 +18,10 @@ func values() -> (x: Int, y: Int, z: Int) {
     let z = 30
     return (x, y, z)
 }
+
 let result = values()
 print(result.y)
 print(result.2)
-
 
 // nested function
 func returnFifteen() -> Int {
@@ -32,8 +32,8 @@ func returnFifteen() -> Int {
     add()
     return y
 }
-print(returnFifteen())
 
+print(returnFifteen())
 
 // function return function
 func makeIncrementer() -> ((Int) -> Int) {
@@ -42,9 +42,9 @@ func makeIncrementer() -> ((Int) -> Int) {
     }
     return addOne
 }
+
 var increment = makeIncrementer()
 print(increment(7))
-
 
 // function as a argument
 func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
@@ -55,8 +55,10 @@ func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     }
     return false
 }
+
 func lessThanTen(number: Int) -> Bool {
     number < 10
 }
+
 var numbers = [20, 19, 7, 12]
 print(hasAnyMatches(list: numbers, condition: lessThanTen))

@@ -10,6 +10,7 @@ class SimpleClass: ExampleProtocol {
         simpleDescription += " Now 100% adjusted."
     }
 }
+
 var a = SimpleClass()
 a.adjust()
 print(a.simpleDescription)
@@ -25,11 +26,11 @@ var b = SimpleStructure()
 b.adjust()
 print(b.simpleDescription)
 
-
 extension Int: ExampleProtocol {
     var simpleDescription: String {
         "The number \(self)"
     }
+
     mutating func adjust() {
         self += 42
     }
@@ -39,7 +40,6 @@ var num = 7
 print(num.simpleDescription)
 num.adjust()
 print(num.simpleDescription)
-
 
 // The compiler treats it as the given type of ExampleProtocol
 // This means that you can’t accidentally access methods

@@ -9,7 +9,6 @@ var shape = Shape()
 shape.numberOfSides = 7
 print(shape.simpleDescription())
 
-
 // Super class and sub class
 class NamedShape {
     var numberOfSides = 0
@@ -30,7 +29,7 @@ class Square: NamedShape {
     init(sideLength: Double, name: String) {
         self.sideLength = sideLength
         super.init(name: name)
-        self.numberOfSides = 4
+        numberOfSides = 4
     }
 
     func area() -> Double {
@@ -70,11 +69,11 @@ class EquilateralTriangle: NamedShape {
         "A Equilateral Triangle with sides of length \(sideLength), perimeter \(perimeter)."
     }
 }
+
 var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
 print(triangle.simpleDescription())
 triangle.perimeter = 12
 print(triangle.simpleDescription())
-
 
 // willSet
 class TriangleAndSquare {
@@ -83,6 +82,7 @@ class TriangleAndSquare {
             square.sideLength = newValue.sideLength
         }
     }
+
     var square: Square {
         willSet {
             triangle.sideLength = newValue.sideLength
@@ -103,7 +103,7 @@ print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
 
 // optional value
-var emptySquare: Square? = nil
+var emptySquare: Square?
 // if value before ? is nil, everything after the ? is ignored
 // like methods and properties and subscripting
 var sideLength = emptySquare?.sideLength
