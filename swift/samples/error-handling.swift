@@ -25,8 +25,22 @@ do {
 let printerSuccess = try? send(job: 1884, toPrinter: "Mergenthaler")
 let printerFailure = try? send(job: 1884, toPrinter: "Never has toner")
 
-print(printerSuccess == nil)
-print(printerFailure == nil)
+print("printerSuccess is nil:", printerSuccess == nil)
+print("printerFailure is nil:", printerFailure == nil)
 
 
 // defer
+var fridgeIsOpen = false
+let fridgeContent = ["milk", "eggs", "leftovers"]
+
+func fridgeContains(_ food: String) -> Bool {
+    fridgeIsOpen = true
+    defer {
+        fridgeIsOpen = false
+    }
+
+    let result = fridgeContent.contains(food)
+    return result
+}
+print("Banana in the fridge:", fridgeContains("banana"))
+print("Is Fridge open?", fridgeIsOpen)
