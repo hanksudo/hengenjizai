@@ -8,7 +8,7 @@ let events = [
     Event(name: "clerk", date: "2020-03-31"),
     Event(name: "hank", date: "2020-03-23"),
     Event(name: "oishi", date: "2020-03-31"),
-    Event(name: "ooo", date: "2020-03-01")
+    Event(name: "ooo", date: "2020-03-01"),
 ]
 
 let groupByDate = Dictionary(grouping: events, by: { $0.date })
@@ -17,7 +17,6 @@ let groupByDate = Dictionary(grouping: events, by: { $0.date })
 groupByDate.forEach { date, events in
     print(date, events)
 }
-
 
 // -- Extension
 
