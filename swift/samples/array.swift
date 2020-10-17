@@ -15,7 +15,6 @@ let sixDoubles = threeDoubles + anotherThreeDoubles
 
 print(sixDoubles)
 
-
 // Accessing and modifiying
 var shoppingList = ["catfish", "water", "tulips"]
 shoppingList[1] = "bottle of water"
@@ -24,7 +23,7 @@ shoppingList += ["Baking Powder", "Cheese"]
 print(shoppingList)
 
 // change range of values even lenth is different
-shoppingList[3...5] = ["Bananas", "Apples"]
+shoppingList[3 ... 5] = ["Bananas", "Apples"]
 print(shoppingList)
 
 shoppingList.insert("Maple Syrup", at: 0)
