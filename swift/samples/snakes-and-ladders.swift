@@ -9,7 +9,7 @@ board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
 
 var square = 0
 var diceRoll = {
-    Int.random(in: 1...6)
+    Int.random(in: 1 ... 6)
 }
 
 repeat {
@@ -20,7 +20,7 @@ repeat {
         print("Encounterd Snake \(board[square])")
     }
     square += board[square]
-    
+
     let pointOfDiceRoll = diceRoll()
     print("Square: \(square), Dice: \(pointOfDiceRoll)")
     // move by the rolled amount

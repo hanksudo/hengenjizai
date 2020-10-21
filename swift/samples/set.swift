@@ -36,6 +36,7 @@ print(favoriteGenres.contains("Rock"))
 if let removedGenre = favoriteGenres.remove("Rock") {
     print(removedGenre)
 }
+
 print(favoriteGenres)
 
 // performing Set operations
