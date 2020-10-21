@@ -12,6 +12,7 @@ default:
 }
 
 // C-Style Fallthrough
+// https://docs.swift.org/swift-book/ReferenceManual/Statements.html#ID440
 let a = 1
 switch a {
 case 1:
