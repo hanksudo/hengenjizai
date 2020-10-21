@@ -10,3 +10,17 @@ case let x where x.hasSuffix("pepper"):
 default:
     print("Everything tastes good in soup.")
 }
+
+
+// C-Style Fallthrough
+let a = 1
+switch a {
+case 1:
+    print("run 1")
+    fallthrough
+case 2:
+    print("run 2")
+    fallthrough
+default:
+    print("run default")
+}
