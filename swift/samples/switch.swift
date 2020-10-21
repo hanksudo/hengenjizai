@@ -11,7 +11,6 @@ default:
     print("Everything tastes good in soup.")
 }
 
-
 // C-Style Fallthrough
 let a = 1
 switch a {
@@ -23,4 +22,15 @@ case 2:
     fallthrough
 default:
     print("run default")
+}
+
+// Where
+let point = (1, -1)
+switch point {
+case let (x, y) where x == y:
+    print("(\(x), \(y)) is one the line x == y")
+case let (x, y) where x == -y:
+    print("(\(x), \(y)) is one the line x == -y")
+case let (x, y):
+    print("(\(x), \(y)) is just some arbitrary point")
 }
