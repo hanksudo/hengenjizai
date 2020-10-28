@@ -4,14 +4,14 @@ func greet(person: String, day: String) -> String {
 
 print(greet(person: "Bob", day: "Tuesday"))
 
-// omit argument label and custom argument label
+// Omit argument label and custom argument label
 func greet(_ person: String, on day: String) -> String {
     return "Hello \(person), today is \(day)."
 }
 
 print(greet("John", on: "Wednesday"))
 
-// return multiple values
+// Return multiple values by Tuple
 func values() -> (x: Int, y: Int, z: Int) {
     let x = 10
     let y = 20
@@ -23,7 +23,7 @@ let result = values()
 print(result.y)
 print(result.2)
 
-// nested function
+// Nested function
 func returnFifteen() -> Int {
     var y = 10
     func add() {
@@ -35,36 +35,6 @@ func returnFifteen() -> Int {
 
 print(returnFifteen())
 
-// function return function
-func makeIncrementer() -> ((Int) -> Int) {
-    func addOne(number: Int) -> Int {
-        return 1 + number
-    }
-    return addOne
-}
-
-var increment = makeIncrementer()
-print(increment(7))
-
-//
-// function as a argument
-//
-func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
-    for item in list {
-        if condition(item) {
-            return true
-        }
-    }
-    return false
-}
-
-func lessThanTen(number: Int) -> Bool {
-    number < 10
-}
-
-var numbers = [20, 19, 7, 12]
-print(hasAnyMatches(list: numbers, condition: lessThanTen))
-
 //
 // Variadic Parameters
 //
@@ -75,5 +45,6 @@ func arithmeticMean(_ numbers: Double...) -> Double {
     }
     return total / Double(numbers.count)
 }
+
 print(arithmeticMean(1, 2, 3, 4, 5))
 print(arithmeticMean(3, 8.25, 18.75))
