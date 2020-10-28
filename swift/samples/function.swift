@@ -46,7 +46,9 @@ func makeIncrementer() -> ((Int) -> Int) {
 var increment = makeIncrementer()
 print(increment(7))
 
+//
 // function as a argument
+//
 func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
     for item in list {
         if condition(item) {
@@ -62,3 +64,16 @@ func lessThanTen(number: Int) -> Bool {
 
 var numbers = [20, 19, 7, 12]
 print(hasAnyMatches(list: numbers, condition: lessThanTen))
+
+//
+// Variadic Parameters
+//
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+print(arithmeticMean(1, 2, 3, 4, 5))
+print(arithmeticMean(3, 8.25, 18.75))
