@@ -1,21 +1,9 @@
 [submodule "python/webpy-fileupload-thumbnail-demo"]
 	path = python/webpy-fileupload-thumbnail-demo
 	url = git@github.com:hanksudo/webpy-fileupload-thumbnail-demo.git
-[submodule "nodejs/flicker_downloader"]
-	path = nodejs/flicker_downloader
-	url = git@github.com:hanksudo/flicker_downloader.git
 [submodule "python/letterpress-solver"]
 	path = python/letterpress-solver
 	url = git@github.com:hanksudo/letterpress-solver.git
-[submodule "nodejs/node-github-hook-deploy"]
-	path = nodejs/node-github-hook-deploy
-	url = git@github.com:hanksudo/node-github-hook-deploy.git
-[submodule "iOS/Matchismo"]
-	path = ios/Matchismo
-	url = git@github.com:hanksudo/Matchismo.git
-[submodule "iOS/Attributor"]
-	path = ios/Attributor
-	url = git@github.com:hanksudo/Attributor.git
 [submodule "go-101"]
 	path = go-101
 	url = git@github.com:hanksudo/go-101.git
