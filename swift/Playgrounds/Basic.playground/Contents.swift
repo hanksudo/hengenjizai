@@ -21,7 +21,8 @@ var year = 2018
 var isRaining = true
 
 let myConstant = 54321
-let PI = 3.14
+let PI = 3.14 // inferred to Double
+let anotherPI = 3 + 0.14159  // inferred to Double
 
 let languageName = "Swift"
 //languageName = "Swift++" // reassign error
@@ -65,6 +66,8 @@ And then I eat one apple.
 // --------
 // Numbers
 
+Int8.max
+Int8.min
 UInt8.max
 UInt8.min
 
@@ -80,11 +83,13 @@ i += 1
 i -= 1
 
 let binaryInteger = 0b10001
+let octalInteger = 0o21
 let hexadecimalInteger = 0xFF
 1.25e2
 1.25e-2
 0xFp2   // 15 x 2 ^ 2
-0xFp-2
+0xFp-2  // 15 x 2 ^ -2
+0xC.3p0 // (12 + 16^-1) x 2 ^ 0
 
 let paddingDouble = 000123.456
 let oneMillion = 1_000_000
@@ -115,8 +120,85 @@ if isRaining {
     print("no need umberlla")
 }
 
-// -----------------
-// Array, Dictionary
+// ------
+// Tuples
+
+// http404Error is of type (Int, String)
+let http404Error = (404, "Not Found")
+let (statusCode, statusMessage) = http404Error
+print("The status code is \(statusCode), \(http404Error.0)")
+print("The status message is \(statusMessage), \(http404Error.1)")
+
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+
+let http200Status = (statusCode: 200, description: "OK")
+print("The status code is \(http200Status.statusCode)")
+print("The status message \(http200Status.description)")
+
+(1, "zerba") < (2, "apple")  // true because 1 < 2; "zerba" and "apple" are not compared
+(100, 100) > (50, 200)
+
+
+// ---------
+// Optionals
+
+var optionalString: String? = "hello"
+print(optionalString == nil)
+
+var optionalName: String? = "Hank Wang"
+if let name = optionalName {
+    print("Hello, my name is \(name)")
+} else {
+    // if optionalName is nil
+    print("Don't know who you are.")
+}
+
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+
+var serverResponseCode: Int? = 400
+serverResponseCode = nil
+
+var surveyAnswer: String?
+
+// -----------------------
+// Nil-Coalescing Operator
+let defaultColorName = "red"
+var userDefinedColorName: String?  // defaults to nil
+
+// if optional value is missing, use default value instead.
+var colorNameToUse = userDefinedColorName ?? defaultColorName
+assert(colorNameToUse == defaultColorName)
+
+// -----------------------------------
+// If Statements and Forced Unwrapping
+
+if convertedNumber != nil {
+//    print("convertedNumber is \(convertedNumber).")
+    print("convertedNumber is \(convertedNumber!).")
+}
+
+if let actualNumber = Int(possibleNumber) {
+    print("\"\(possibleNumber)\" has an integer value of \(actualNumber)")
+} else {
+    print("\"\(possibleNumber)\" could not be converted to an integer")
+}
+
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString! // require an exclamation mark
+
+let assumedString: String! = "An implictly unwrapped optional string."
+let implicitString: String = assumedString // no need exclamation mark
+
+// -------------------
+// Ternary Conditional
+2 > 1 ? "yes" : "no"
+
+
+/**
+ Array, Dictionary
+*/
 var emptyArray = [String]()
 var shoppingList = ["catfish", "water", "tulips"]
 shoppingList[1] = "bottle of water"
@@ -195,74 +277,6 @@ repeat {
 } while n < 10
 print(n)
 
-// ------
-// Tuples
-
-// http404Error is of type (Int, String)
-let http404Error = (404, "Not Found")
-let (statusCode, statusMessage) = http404Error
-print("The status code is \(statusCode), \(http404Error.0)")
-print("The status message is \(statusMessage), \(http404Error.1)")
-
-let (justTheStatusCode, _) = http404Error
-print("The status code is \(justTheStatusCode)")
-
-let http200Status = (statusCode: 200, description: "OK")
-print("The status code is \(http200Status.statusCode)")
-print("The status message \(http200Status.description)")
-
-(1, "zerba") < (2, "apple")
-(100, 200) > (50, 100)
-
-// ---------
-// Optionals
-
-var optionalString: String? = "hello"
-print(optionalString == nil)
-
-var optionalName: String? = "Hank Wang"
-if let name = optionalName {
-    print("Hello, my name is \(name)")
-} else {
-    // if optionalName is nil
-    print("Don't know who you are.")
-}
-
-let possibleNumber = "123"
-let convertedNumber = Int(possibleNumber)
-
-var serverResponseCode: Int? = 400
-serverResponseCode = nil
-
-var surveyAnswer: String?
-
-let defaultColorName = "red"
-var userDefinedColorName: String?  // defaults to nil
-
-// if optional value is missing, use default value instead.
-var colorNameToUse = userDefinedColorName ?? defaultColorName
-assert(colorNameToUse == defaultColorName)
-
-// -----------------------------------
-// If Statements and Forced Unwrapping
-
-if convertedNumber != nil {
-//    print("convertedNumber is \(convertedNumber).")
-    print("convertedNumber is \(convertedNumber!).")
-}
-
-if let actualNumber = Int(possibleNumber) {
-    print("\"\(possibleNumber)\" has an integer value of \(actualNumber)")
-} else {
-    print("\"\(possibleNumber)\" could not be converted to an integer")
-}
-
-let possibleString: String? = "An optional string."
-let forcedString: String = possibleString! // require an exclamation mark
-
-let assumedString: String! = "An implictly unwrapped optional string."
-let implicitString: String = assumedString // no need exclamation mark
-
 
 // --------------
 // Switch
@@ -282,18 +296,34 @@ default:
 
 // --------------
 // Error Handling
-// ignored...
+func canThrowAnError() throws {
+    // this function may or may not throw an error
+}
+
+do {
+    try canThrowAnError()
+    // no error was thrown
+} catch let error {
+    // an error was thrown
+}
 
 
 // -------------------------
 // Debugging with Assertions
 let age = -3
-// assert(age >= 0, "A peron's age can't be less than zero.")
+//assert(age >= 0, "A peron's age can't be less than zero.")
+//assertionFailure("checkedStillFailed")
 
+
+//--------------
+// Preconditions
+//let index = -1
+//precondition(index > 0, "Index must be greater than zero")
 
 // --------------
 // Range Operator
 
+// Closed range operator
 1...5
 for i in 1...5 {
     print("\(i) times 5 is \(i * 5)")
