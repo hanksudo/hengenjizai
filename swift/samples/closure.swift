@@ -14,10 +14,9 @@ print(mappedNumbers)
 let sortedNumbers = numbers.sorted { $0 > $1 }
 print(sortedNumbers)
 
-
 /**
- Sort method
-**/
+  Sort method
+ **/
 let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
 
 // normal function
@@ -30,12 +29,12 @@ print(reversedNames)
 
 // Closure expression
 reversedNames = names.sorted(by: { (s1: String, s2: String) -> Bool in
-    return s1 > s2
+    s1 > s2
 })
 print(reversedNames)
 
 // Infer type from context
-reversedNames = names.sorted(by: { s1, s2 in return s1 > s2 })
+reversedNames = names.sorted(by: { s1, s2 in s1 > s2 })
 print(reversedNames)
 
 // Implicit returns
@@ -49,3 +48,27 @@ print(reversedNames)
 // Operator methods
 reversedNames = names.sorted(by: >)
 print(reversedNames)
+
+/**
+ Multiple closures
+ */
+
+struct Server {}
+
+func download(from _: Server) -> String? {
+    "something"
+}
+
+func loadPicture(from server: Server, completion: (String) -> Void, onFailure: () -> Void) {
+    if let picture = download(from: server) {
+        completion(picture)
+    } else {
+        onFailure()
+    }
+}
+
+loadPicture(from: Server()) { _ in
+    print("completion")
+} onFailure: {
+    print("Could not download picture")
+}
