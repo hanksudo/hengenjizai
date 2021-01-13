@@ -1,11 +1,11 @@
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Guess the number!");
 
-    // Generate random number for answer
+    // Generate random number 1~100 for answer
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
     // println!("The secret number is {}", secret_number);
@@ -19,14 +19,13 @@ fn main() {
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
-        
         // convert string to unsigned 32-bit integer
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(err) => {
                 println!("Error: {}\n", err);
                 continue;
-            },
+            }
         };
 
         println!("You guessed: {}", guess);
