@@ -36,6 +36,8 @@ pub fn run() {
     const PI: f64 = 3.1415926;
     println!("Pi is roughly {:.3}", PI);
 
+    println!("{:?}", (12, true, "hello"));
+
     // Print custom type
     #[derive(Debug)]
     struct Structure(i32);
