@@ -29,11 +29,14 @@ rustc hello.rs
 cargo new project_name
 cargo build
 
+# Execute and build if source code modified before run
+cargo run
+
+# Build only
+cargo build
+
 # Building for Release
 cargo build --release
-
-# Auto build if source code modified before run
-cargo run
 
 # Check binary
 cargo check
