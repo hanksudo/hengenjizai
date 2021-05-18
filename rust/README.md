@@ -10,11 +10,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
 
 # install component rustfmt
-rustup component add rustfmt --toolchain stable-x86_64-apple-darwin
+rustup component add rustfmt
 
 # check version
 rustc --version
 cargo --version
+rustup --version
 ```
 
 ## Execute
