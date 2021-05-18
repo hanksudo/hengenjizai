@@ -2,8 +2,7 @@
     block comment
 */
 
-// This is the main function
-fn main() {
+pub fn run() {
     // println is a Rust macro
     println!("Hello, world!");
     println!("{}, {}!", "Hello", "world"); // Hello, world!
@@ -26,12 +25,13 @@ fn main() {
 
     // Special formatting
     println!("{} {:b} binary", 1, 15);
+    println!("Binary: {:b} Hex {:x} Octal: {:o}", 10, 10, 10);
 
     // right align
-    println!("{number:>width$}", number=1, width=6);
+    println!("{number:>width$}", number = 1, width = 6);
 
     // pad number
-    println!("{number:>0width$}", number=1, width=6);
+    println!("{number:>0width$}", number = 1, width = 6);
 
     const PI: f64 = 3.1415926;
     println!("Pi is roughly {:.3}", PI);
