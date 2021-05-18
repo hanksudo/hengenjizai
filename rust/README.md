@@ -48,6 +48,17 @@ cargo update
 cargo doc --open
 ```
 
+## Troubleshooting
+
+> error: failed to get `xxx` as a dependency of package
+
+add this to ~/.cargo/config
+
+```toml
+[net]
+git-fetch-with-cli = true
+```
+
 ## References
 
 - [Rust programming language](https://www.rust-lang.org/)
