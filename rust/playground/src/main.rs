@@ -11,7 +11,10 @@
 // mod functions;
 // mod closures;
 // mod pointer_ref;
-mod structs;
+// mod structs;
+// mod structs_rectangle;
+// mod structs_method_rectangle;
+// mod structs_more;
 
 fn main() {
     // hello_world::run();
@@ -27,5 +30,8 @@ fn main() {
     // functions::run();
     // closures:::run();
     // pointer_ref::run();
-    structs::run();
+    // structs::run();
+    // structs_rectangle::run();
+    // structs_method_rectangle::run();
+    // structs_more::run();
 }

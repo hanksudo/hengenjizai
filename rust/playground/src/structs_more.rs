@@ -26,7 +26,7 @@ struct Rectangle {
     bottom_right: Point,
 }
 
-fn main() {
+pub fn run() {
     // Create struct with field init shorthand
     let name = "Peter";
     let age = 27;
@@ -34,7 +34,6 @@ fn main() {
 
     // Print debug struct
     println!("{:?}", peter);
-
 
     // Instantiate a `Point`
     let point: Point = Point { x: 10.3, y: 0.4 };
@@ -51,11 +50,17 @@ fn main() {
     println!("second point: ({}, {})", bottom_right.x, bottom_right.y);
 
     // Destructure the point using a `let` binding
-    let Point { x: top_edge, y: left_edge } = point;
+    let Point {
+        x: top_edge,
+        y: left_edge,
+    } = point;
 
     let _rectangle = Rectangle {
         // struct instantiation is an expression too
-        top_left: Point { x: left_edge, y: top_edge },
+        top_left: Point {
+            x: left_edge,
+            y: top_edge,
+        },
         bottom_right: bottom_right,
     };
 
