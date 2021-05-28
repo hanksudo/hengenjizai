@@ -1,5 +1,8 @@
-// Vec<T>
-fn main() {
+// Vectors - Resizable arrays
+
+use std::mem;
+
+pub fn run() {
     // Create
     let v: Vec<i32> = Vec::new();
     println!("{:?}", v);
@@ -13,7 +16,13 @@ fn main() {
     v.push(6);
     v.push(7);
     v.push(8);
-    println!("{:?}", v);
+    println!("v: {:?}", v);
+
+    // Pop last value
+    v.pop();
+    println!("v: {:?}", v);
+
+    println!("array a occupies {} bytes", mem::size_of_val(&v));
 
     // Read
     let third: &i32 = &v[2];
@@ -26,14 +35,25 @@ fn main() {
 
     // iterate
     for i in &v {
-        println!("{}", i);
+        print!("{}\t", i);
     }
+    println!();
 
-    // update every element
+    for i in v.iter() {
+        print!("{}\t", i);
+    }
+    println!();
+
+    // Loop & mutate values
     for i in &mut v {
         *i += 10;
-        println!("{}", i);
     }
+    println!("{:?}", v);
+
+    for x in v.iter_mut() {
+        *x *= 2;
+    }
+    println!("{:?}", v);
 
     // Enum
     #[derive(Debug)]

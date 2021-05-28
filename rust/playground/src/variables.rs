@@ -1,4 +1,8 @@
 // Variables are immutable by default
+// https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
+
+// Data Types
+// https://doc.rust-lang.org/book/ch03-02-data-types.html#data-types
 
 pub fn run() {
     // default
@@ -14,8 +18,9 @@ pub fn run() {
     let an_integer = 5i32; // Suffix annotation
     let a = "Hello, world."; //a: &'static str
     let b: &str = "こんにちは、世界！"; // &str - unicode string slices
+    let c = '\u{1F608}';
 
-    println!("{:?}", (a_float, an_integer, a, b));
+    println!("{:?}", (a_float, an_integer, a, b, c));
 
     // Boolean
     let t = true;
