@@ -7,6 +7,7 @@
 // mod slices;
 // mod vectors;
 // mod conditions;
+// mod match_options;
 // mod loops;
 // mod functions;
 // mod closures;
@@ -27,6 +28,7 @@ fn main() {
     // slices::run();
     // vectors::run();
     // conditions::run();
+    // match_options::run();
     // loops::run();
     // functions::run();
     // closures:::run();
