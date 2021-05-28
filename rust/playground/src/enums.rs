@@ -11,12 +11,10 @@ enum Message {
 }
 
 impl Message {
-    fn call(&self) {
-
-    }
+    fn call(&self) {}
 }
 
-fn main() {
+pub fn run() {
     let home = IpAddrKind::V4(127, 0, 0, 1);
     let loopback = IpAddrKind::V6(String::from("::1"));
 
@@ -28,6 +26,6 @@ fn main() {
     match quit {
         Message::Quit => println!("Quit"),
         Message::Write(s) => println!("{}", s),
-        _ => return
+        _ => return,
     }
 }

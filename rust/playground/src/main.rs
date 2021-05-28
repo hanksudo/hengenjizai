@@ -15,6 +15,7 @@
 // mod structs_rectangle;
 // mod structs_method_rectangle;
 // mod structs_more;
+// mod enums;
 
 fn main() {
     // hello_world::run();
@@ -34,4 +35,5 @@ fn main() {
     // structs_rectangle::run();
     // structs_method_rectangle::run();
     // structs_more::run();
+    // enums::run();
 }
