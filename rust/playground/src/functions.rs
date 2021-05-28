@@ -1,4 +1,4 @@
-fn main() {
+pub fn run() {
     another_function(5);
 
     let five = five();

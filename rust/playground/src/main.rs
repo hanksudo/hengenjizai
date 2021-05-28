@@ -6,7 +6,12 @@
 // mod arrays;
 // mod slices;
 // mod vectors;
-mod conditions;
+// mod conditions;
+// mod loops;
+// mod functions;
+// mod closures;
+// mod pointer_ref;
+mod structs;
 
 fn main() {
     // hello_world::run();
@@ -17,5 +22,10 @@ fn main() {
     // arrays::run();
     // slices::run();
     // vectors::run();
-    conditions::run();
+    // conditions::run();
+    // loops::run();
+    // functions::run();
+    // closures:::run();
+    // pointer_ref::run();
+    structs::run();
 }

@@ -1,7 +1,7 @@
 // Condititonals
 
 pub fn run() {
-    let age = 21;
+    let age: u8 = 21;
     let check_id: bool = false;
     let knows_person_of_age = true;
 
