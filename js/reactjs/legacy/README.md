@@ -1,5 +1,7 @@
 # ReactJS
 
+2022-10-20: somehow I learn this in 2016, it's very differnet version of React, so I move it to legacy.
+
 ## Babel
 
 ```bash
