@@ -26,7 +26,7 @@ function App(props) {
 
 function Button(props) {
   return (
-    <button onClick={props.onClick}>Chnage color</button>
+    <button onClick={props.onClick}>Change color</button>
   )
 }
 
