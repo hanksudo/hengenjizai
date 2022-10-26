@@ -6,8 +6,8 @@ Refer: <https://beta.reactjs.org/learn/thinking-in-react>
 
 ## hierarchy
 
-- FilterableProductTable
-  - SearchBar
-  - ProductTable
-    - ProductCategoryRow
-    - ProductRow
+- [x] FilterableProductTable
+  - [x] SearchBar
+  - [x] ProductTable
+    - [x] ProductCategoryRow
+    - [x] ProductRow
