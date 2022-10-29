@@ -1,7 +1,5 @@
 # 変幻自在（へんげんじざい）
 
-# Others
-
 ## Side Projects
 
 - [bot-currency: Currency Rate from BOT (Bank Of Taiwan)](https://github.com/hanksudo/bot-currency)
@@ -54,11 +52,9 @@
 - [MemeMe: 長輩圖產生器!? (Swift)](https://github.com/hanksudo/MemeMe)
 - [FlickrViewer: Use Flickr API to view photos (Swift)](https://github.com/hanksudo/FlickrViewer)
 
-
 ### CoreML
 
 - [PlaceRecognizer: Image recognition with CoreML and Places205-GoogLeNet](https://github.com/hanksudo/PlaceRecognizer)
-
 
 ### Programming Language and frameworks
 
@@ -73,10 +69,11 @@
 
 - [checkio: My solution for checkio.org](https://github.com/hanksudo/checkio)
 - [letterpress-solver: A solver for Letterpress](https://github.com/hanksudo/letterpress-solver)
-- [nodeschool: My nodeschool solutions](https://github.com/hanksudo/nodeschool)
 - [Exercism - my exercism solutions](https://github.com/hanksudo/exercism)
 - [Leetcode](https://github.com/hanksudo/leetcode)
 - [Hackerrank](https://github.com/hanksudo/hackerrank)
+- [Codecademy](https://www.codecademy.com/profiles/hanksudo)
+- [nodeschool: My nodeschool solutions](https://github.com/hanksudo/nodeschool)
 
 ## g0v
 
