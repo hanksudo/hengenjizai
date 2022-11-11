@@ -22,3 +22,25 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Command
+
+```bash
+bin/rails server
+
+# create controller
+bin/rails generate controller Articles index --skip-routes
+
+# create model
+bin/rails generate model Article title:string body:text
+bin/rails db:migrate
+
+bin/rails console
+
+> article = Article.new(title: "Hello Rails", body: "I am on Rails!")
+> article.save
+> article
+> Article.find(1)
+> Article.all
+
+```
