@@ -43,4 +43,6 @@ bin/rails console
 > Article.find(1)
 > Article.all
 
+# inspect routes
+bin/rails routes
 ```
