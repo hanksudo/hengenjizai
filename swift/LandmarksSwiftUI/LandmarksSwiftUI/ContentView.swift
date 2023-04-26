@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Landmarks-swiftui
+//  LandmarksSwiftUI
 //
 //  Created by Hank Wang on 2023/04/27.
 //
