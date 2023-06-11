@@ -1,0 +1,19 @@
+{
+    "aps": {
+        "alert": {
+            "title": "You are within 5 miles of Silver Salmon Creek.",
+            "body": "Silver Salmon Creek"
+        },
+        "category": "LandmarkNear",
+        "thread-id": "5280"
+    },
+    
+    "landmarkIndex": 1,
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "First Button",
+            "identifier": "firstButtonAction"
+        }
+    ],
+}
