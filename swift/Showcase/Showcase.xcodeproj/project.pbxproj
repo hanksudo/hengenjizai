@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36BA13B22A38C605000983D4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B12A38C605000983D4 /* TimerView.swift */; };
+		36BA13B62A38CF1D000983D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B52A38CF1D000983D4 /* SettingsView.swift */; };
 		36E1FA2D29FC15D6003F7C44 /* ShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E1FA2C29FC15D6003F7C44 /* ShowcaseApp.swift */; };
 		36E1FA2F29FC15D6003F7C44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E1FA2E29FC15D6003F7C44 /* ContentView.swift */; };
 		36E1FA3129FC15D7003F7C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E1FA3029FC15D7003F7C44 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		36BA13B12A38C605000983D4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		36BA13B52A38CF1D000983D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		36E1FA2929FC15D6003F7C44 /* Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E1FA2C29FC15D6003F7C44 /* ShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseApp.swift; sourceTree = "<group>"; };
 		36E1FA2E29FC15D6003F7C44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,22 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		36BA13B02A38C5F9000983D4 /* Timer */ = {
+		36BA13B42A38CF03000983D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				36BA13B12A38C605000983D4 /* TimerView.swift */,
-			);
-			name = Timer;
-			sourceTree = "<group>";
-		};
-		36BA13B32A38C737000983D4 /* PublicPrivateView */ = {
-			isa = PBXGroup;
-			children = (
 				36E1FA4029FC1F5B003F7C44 /* PrivateView.swift */,
 				36E1FA4229FC1FA1003F7C44 /* PublicView.swift */,
 				36E1FA3C29FC175B003F7C44 /* PublicPrivateView.swift */,
+				36BA13B52A38CF1D000983D4 /* SettingsView.swift */,
 			);
-			name = PublicPrivateView;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		36E1FA2029FC15D6003F7C44 = {
@@ -79,13 +75,12 @@
 		36E1FA2B29FC15D6003F7C44 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
-				36BA13B32A38C737000983D4 /* PublicPrivateView */,
-				36BA13B02A38C5F9000983D4 /* Timer */,
+				36BA13B42A38CF03000983D4 /* Views */,
 				36E1FA2C29FC15D6003F7C44 /* ShowcaseApp.swift */,
 				36E1FA2E29FC15D6003F7C44 /* ContentView.swift */,
+				36E1FA3A29FC15F6003F7C44 /* ShowcaseList.swift */,
 				36E1FA3029FC15D7003F7C44 /* Assets.xcassets */,
 				36E1FA3229FC15D7003F7C44 /* Preview Content */,
-				36E1FA3A29FC15F6003F7C44 /* ShowcaseList.swift */,
 			);
 			path = Showcase;
 			sourceTree = "<group>";
@@ -169,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36BA13B22A38C605000983D4 /* TimerView.swift in Sources */,
+				36BA13B62A38CF1D000983D4 /* SettingsView.swift in Sources */,
 				36E1FA2F29FC15D6003F7C44 /* ContentView.swift in Sources */,
 				36E1FA4329FC1FA1003F7C44 /* PublicView.swift in Sources */,
 				36E1FA3D29FC175B003F7C44 /* PublicPrivateView.swift in Sources */,
