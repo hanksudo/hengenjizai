@@ -10,17 +10,10 @@ import SwiftUI
 @main
 struct ShowcaseApp: App {
     var body: some Scene {
-        WindowGroup {
-            TabView {
-                ContentView()
-                    .tabItem {
-                        Label("Journal", systemImage: "book")
-                    }
-                SettingsView()
-                    .tabItem {
-                        Label("Settings", systemImage: "gear")
-                    }
-            }
-        }
+        #if os(iOS)
+        MyScence()
+        #elseif os(macOS)
+        MyAlternativeScene()
+        #endif
     }
 }
