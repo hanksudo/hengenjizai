@@ -16,10 +16,16 @@ struct ShowcaseList: View {
                 } label: {
                     Text("Public / Private View")
                 }
+                NavigationLink {
+                    TimerView()
+                } label: {
+                    Text("Timer")
+                }
                 
-                Text("Case 2")
-                    .navigationTitle("Showcases")
+                Text("Case 3")
+                    
             }
+            .navigationTitle("Showcases")
         }
     }
 }

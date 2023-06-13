@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-
 struct PublicPrivateView: View {
     @State private var isAuthenticated = false
     @State private var alertMessage = ""
     @State private var showAlert = false
     @State private var goPublicView = false
-    
     
     var body: some View {
         VStack {
