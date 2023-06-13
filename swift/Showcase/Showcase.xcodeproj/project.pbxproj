@@ -50,6 +50,16 @@
 			name = Timer;
 			sourceTree = "<group>";
 		};
+		36BA13B32A38C737000983D4 /* PublicPrivateView */ = {
+			isa = PBXGroup;
+			children = (
+				36E1FA4029FC1F5B003F7C44 /* PrivateView.swift */,
+				36E1FA4229FC1FA1003F7C44 /* PublicView.swift */,
+				36E1FA3C29FC175B003F7C44 /* PublicPrivateView.swift */,
+			);
+			name = PublicPrivateView;
+			sourceTree = "<group>";
+		};
 		36E1FA2029FC15D6003F7C44 = {
 			isa = PBXGroup;
 			children = (
@@ -69,15 +79,13 @@
 		36E1FA2B29FC15D6003F7C44 /* Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				36BA13B32A38C737000983D4 /* PublicPrivateView */,
 				36BA13B02A38C5F9000983D4 /* Timer */,
-				36E1FA4029FC1F5B003F7C44 /* PrivateView.swift */,
-				36E1FA4229FC1FA1003F7C44 /* PublicView.swift */,
 				36E1FA2C29FC15D6003F7C44 /* ShowcaseApp.swift */,
 				36E1FA2E29FC15D6003F7C44 /* ContentView.swift */,
 				36E1FA3029FC15D7003F7C44 /* Assets.xcassets */,
 				36E1FA3229FC15D7003F7C44 /* Preview Content */,
 				36E1FA3A29FC15F6003F7C44 /* ShowcaseList.swift */,
-				36E1FA3C29FC175B003F7C44 /* PublicPrivateView.swift */,
 			);
 			path = Showcase;
 			sourceTree = "<group>";
