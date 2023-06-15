@@ -14,12 +14,17 @@ struct ShowcaseList: View {
                 NavigationLink {
                     PublicPrivateView()
                 } label: {
-                    Text("Public / Private View")
+                    Label("Public / Private View", systemImage: "lock")
+                }
+                NavigationLink {
+                    LibraryView()
+                } label: {
+                    Label("Libary", systemImage: "books.vertical")
                 }
                 NavigationLink {
                     TimerView()
                 } label: {
-                    Text("Timer")
+                    Label("Timer", systemImage: "timer")
                 }
             }
             .navigationTitle("Showcases")

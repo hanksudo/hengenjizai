@@ -16,11 +16,6 @@ struct MyScence: Scene {
                         Label("Home", systemImage: "house")
                     }
                 
-                LibraryView()
-                    .tabItem {
-                        Label("Libary", systemImage: "books.vertical")
-                    }
-                
                 SettingsView()
                     .tabItem {
                         Label("Settings", systemImage: "gear")
