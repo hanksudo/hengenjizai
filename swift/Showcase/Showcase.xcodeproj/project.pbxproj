@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3648E1A32A3AA89800FA4671 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3648E1A22A3AA89800FA4671 /* SettingsDetailView.swift */; };
 		36BA13B22A38C605000983D4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B12A38C605000983D4 /* TimerView.swift */; };
 		36BA13B62A38CF1D000983D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B52A38CF1D000983D4 /* SettingsView.swift */; };
 		36BA13B82A38D115000983D4 /* AlternativeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B72A38D115000983D4 /* AlternativeContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3648E1A22A3AA89800FA4671 /* SettingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailView.swift; sourceTree = "<group>"; };
 		36BA13B12A38C605000983D4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		36BA13B52A38CF1D000983D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		36BA13B72A38D115000983D4 /* AlternativeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				36E1FA4229FC1FA1003F7C44 /* PublicView.swift */,
 				36E1FA3C29FC175B003F7C44 /* PublicPrivateView.swift */,
 				36BA13B52A38CF1D000983D4 /* SettingsView.swift */,
+				3648E1A22A3AA89800FA4671 /* SettingsDetailView.swift */,
 				36E1FA2E29FC15D6003F7C44 /* ContentView.swift */,
 				36BA13B72A38D115000983D4 /* AlternativeContentView.swift */,
 				36BA13BE2A38D451000983D4 /* LibraryView.swift */,
@@ -185,6 +188,7 @@
 			files = (
 				36BA13BB2A38D1FE000983D4 /* MyScence.swift in Sources */,
 				36BA13B22A38C605000983D4 /* TimerView.swift in Sources */,
+				3648E1A32A3AA89800FA4671 /* SettingsDetailView.swift in Sources */,
 				36BA13B62A38CF1D000983D4 /* SettingsView.swift in Sources */,
 				36E1FA2F29FC15D6003F7C44 /* ContentView.swift in Sources */,
 				36BA13BF2A38D451000983D4 /* LibraryView.swift in Sources */,
