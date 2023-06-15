@@ -51,12 +51,17 @@ struct LibraryView: View {
                 
                 Divider()
                 
-                AsyncImage(url: URL(string: "https://picsum.photos/200/200")) { image in
-                    image.resizable()
-                } placeholder: {
-                    ProgressView()
+                VStack {
+                    AsyncImage(url: URL(string: "https://picsum.photos/200/200")) { image in
+                        image.resizable()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 200, height: 200)
                 }
-                .frame(width: 200, height: 200)
+                
+                CaptionedPhoto(captionText: "Test image is here")
+                    .frame(width: 400, height: 400)
                 
                 Divider()
                 

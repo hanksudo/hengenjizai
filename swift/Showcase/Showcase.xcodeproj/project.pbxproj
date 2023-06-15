@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363ECE802A3B42A700035751 /* CaptionedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363ECE7F2A3B42A700035751 /* CaptionedPhoto.swift */; };
 		3648E1A32A3AA89800FA4671 /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3648E1A22A3AA89800FA4671 /* SettingsDetailView.swift */; };
 		36B6F57E2A3B217C00CCBD5A /* KeywordBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B6F57D2A3B217C00CCBD5A /* KeywordBubble.swift */; };
 		36BA13B22A38C605000983D4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA13B12A38C605000983D4 /* TimerView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		363ECE7F2A3B42A700035751 /* CaptionedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedPhoto.swift; sourceTree = "<group>"; };
 		3648E1A22A3AA89800FA4671 /* SettingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailView.swift; sourceTree = "<group>"; };
 		36B6F57D2A3B217C00CCBD5A /* KeywordBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordBubble.swift; sourceTree = "<group>"; };
 		36BA13B12A38C605000983D4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				36E1FA2E29FC15D6003F7C44 /* ContentView.swift */,
 				36BA13B72A38D115000983D4 /* AlternativeContentView.swift */,
 				36BA13BE2A38D451000983D4 /* LibraryView.swift */,
+				363ECE7F2A3B42A700035751 /* CaptionedPhoto.swift */,
 				36B6F57D2A3B217C00CCBD5A /* KeywordBubble.swift */,
 			);
 			path = Views;
@@ -196,6 +199,7 @@
 				36BA13B62A38CF1D000983D4 /* SettingsView.swift in Sources */,
 				36E1FA2F29FC15D6003F7C44 /* ContentView.swift in Sources */,
 				36BA13BF2A38D451000983D4 /* LibraryView.swift in Sources */,
+				363ECE802A3B42A700035751 /* CaptionedPhoto.swift in Sources */,
 				36E1FA4329FC1FA1003F7C44 /* PublicView.swift in Sources */,
 				36BA13BD2A38D245000983D4 /* MyAlternativeScene.swift in Sources */,
 				36E1FA3D29FC175B003F7C44 /* PublicPrivateView.swift in Sources */,
