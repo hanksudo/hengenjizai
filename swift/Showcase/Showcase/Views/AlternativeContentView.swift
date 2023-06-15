@@ -9,7 +9,33 @@ import SwiftUI
 
 struct AlternativeContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationSplitView {
+            List {
+                NavigationLink {
+                    PublicPrivateView()
+                } label: {
+                    Label("Public/Private View", systemImage: "lock")
+                }
+                NavigationLink {
+                    TimerView()
+                } label: {
+                    Label("Timer", systemImage: "timer")
+                }
+                NavigationLink {
+                    LibraryView()
+                } label: {
+                    Label("Libary", systemImage: "books.vertical")
+                }
+                NavigationLink {
+                    SettingsView()
+                } label: {
+                    Label("Settings", systemImage: "gear")
+                }
+            }
+            .navigationTitle("Showcases")
+        } detail: {
+            
+        }
     }
 }
 

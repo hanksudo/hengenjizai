@@ -13,7 +13,7 @@ struct MyScence: Scene {
             TabView {
                 ContentView()
                     .tabItem {
-                        Label("Journal", systemImage: "book")
+                        Label("Home", systemImage: "house")
                     }
                 
                 LibraryView()

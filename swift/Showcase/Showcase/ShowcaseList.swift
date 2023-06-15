@@ -21,9 +21,6 @@ struct ShowcaseList: View {
                 } label: {
                     Text("Timer")
                 }
-                
-                Text("Case 3")
-                    
             }
             .navigationTitle("Showcases")
         }
